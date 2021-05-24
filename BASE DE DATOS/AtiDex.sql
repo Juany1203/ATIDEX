@@ -56,7 +56,45 @@ distrito varchar(10) not null,
 Exacto varchar(30) not null,
 telefono int,
 correoElectronico varchar(30) not null,
-sitioweb varchar(30) not null, -- faltan las redes sociales
+sitioweb varchar(30) , -- le quité el not null, qué pasa si el usuario no tiene uno?
+perfilFB varchar (10),
+perfilTW varchar (10),
+perfilIG varchar (10),
+)
+create table GestionMovPK
+(
+GestionPKID int foreign key(GestionPKID) references Pokemon(PokemonID),  
+IDEntrenador int foreign key (IDEntrenador) references Entrenador (IDEntrenador),
+IDMovimiento int foreign key (IDMovimiento) references Movimientos (IDMovimiento),
+)
+create table GestionPK
+(
+IDEntrenador int foreign key (IDEntrenador) references Entrenador (IDEntrenador),
+PokemonID int foreign key (PokemonID) references Pokemon (Pokemon ID),
+estado varchar (30) not null,
+)
+create table Bitacora(
+fecha date,
+aventura varchar (70),
+IDEntrenador int foreign key (IDEntrenador) references Entrenador (IDEntrenador),
+)
+create table Usuario(
+email varchar (30) UNIQUE not null,
+username varchar (15) PRIMARY KEY UNIQUE not null,
+contrasena varchar (20) not null,
+)
+
+create table Cliente(
+nombreCl varchar (15) not null,
+apellido1Cl varchar (15) not null,
+apellido2Cl varchar (15) not null,
+cedulaCl int UNIQUE not null,
+provinciaCl varchar (15) not null,
+cantonCl varchar (15) not null,
+distrito varchar (15) not null,
+emailCL  varchar (15) not null UNIQUE,
+telefonoCl int not null,
+ubicacionCL varchar (15) not null,
 )
 
 ALTER TABLE Pokemon

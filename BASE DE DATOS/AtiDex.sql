@@ -1,3 +1,14 @@
+/* 
+Proyecto: ATIDEX
+
+Elaborado por:
+- Juan Carlos Álvarez Vieto
+- Juan Andrés Fernández Camacho
+- Marcelo Fernández Solano
+- Steven Vega Zúñiga 
+
+*/
+
 create database AtiDex
 use AtiDex
 drop database Atidex
@@ -5,97 +16,95 @@ drop database Atidex
 create table Pokemon
 (
 PokemonID int IDENTITY(0,1) PRIMARY KEY not null,
-Nombre varchar(20) UNIQUE not null,
-salud int not null,
-ATespecial int not null,
-DFespecial int not null,
-ataque int not null,
-defensa int not null, 
-velocidad int not null,
-generacion int not null,
-legendario bit not null,
-Imagenpokemon image, 
-IDEntrenador int not null,
-
+nombrePokemon varchar(20) UNIQUE not null,
+saludPokemon varchar not null,
+ataqueEspecialPokemon varchar not null,
+defensaEspecialPokemon varchar not null,      --El pokemonID no debería de ser (0, 1) en vez de (10, 1)
+ataquePokemon varchar not null,
+defensaPokemon varchar not null, 
+velocidadPokemon varchar not null,
+generacionPokemon varchar not null,
+legendarioPokemon bit not null,
+imagenPokemon image, 
 )
 
-create table TABLA_INTERMEDIA_MovPokemon
+create table Tipo
 (
-PokemonID int foreign key(PokemonID) references Pokemon(PokemonID),
-IDMovimiento int foreign key (IDMovimiento) references Movimientos (IDMovimiento),
+TipoID int IDENTITY(0,1) PRIMARY KEY not null,    --Programar restricción del UNIQUE
+TipoNombre Varchar(15) UNIQUE not null,
 )
 
 create table Movimientos
 (
-IDMovimiento int IDENTITY(0,1) PRIMARY KEY not null,
-NOMBREMovimiento varchar(15) not null,
-DescripcionMovimiento varchar(15) not null,
-tipoMovimiento varchar(10) not null,
-PokemonID int not null,
+MovimientoID int IDENTITY(0,1) PRIMARY KEY not null,
+nombreMovimiento varchar(15) not null,
+descripcionMovimiento varchar(15) not null,
+TipoID int foreign key (TipoID) references Tipo(TipoID),
 )
 
-create table TABLA_INTERMEDIA_TipPokemon
+--Relaciona tabla Pokemon con tabla movimientos
+create table TABLA_INTERMEDIA_MovPokemon
 (
 PokemonID int foreign key(PokemonID) references Pokemon(PokemonID),
-MovID  int foreign key (MovID) references Tipos (MovID),
+IDMovimiento int foreign key (IDMovimiento) references Movimientos(MovimientoID),
 )
 
-
-create table Tipos
+create table intPOKETIPO
 (
-MovID int IDENTITY(0,1) PRIMARY KEY not null,
-MovNombre Varchar(15) not null,
+PokemonID int foreign key(PokemonID) references Pokemon(PokemonID),
+TipoID int foreign key (TipoID) references Tipo(TipoID),
+)
+
+create table Admin 
+(
+AdminID int IDENTITY (0,1) PRIMARY KEY not null,
+userNameAdmin VARCHAR (10) UNIQUE not null,
+contrasenaAdmin VARCHAR (10) not null,
+nombreAdmin VARCHAR (10) not null,
+apellido1Admin VARCHAR (10) not null,
+apellido2Admin VARCHAR (10) not null,
+provinciaAdminr varchar(10) not null,
+cantonAdmin varchar(10) not null,
+distritoAdmin varchar(10) not null,
+direccionAdmin varchar(30) not null,
+telefonoAdmin varchar(9) not null,
+correoElectronicoAdmin varchar(30) not null,
 )
 
 create table Entrenadores
 (
-IDEntrenador int IDENTITY(0,1) PRIMARY KEY not null,
-provincia varchar(10) not null,
-canton varchar(10) not null,
-distrito varchar(10) not null,
-Exacto varchar(30) not null,
-telefono int,
-correoElectronico varchar(30) not null,
-sitioweb varchar(30) , -- le quité el not null, qué pasa si el usuario no tiene uno?
-perfilFB varchar (10),
-perfilTW varchar (10),
-perfilIG varchar (10),
+EntrenadorID int IDENTITY(0,1) PRIMARY KEY not null,
+UserNameEntrenador VARCHAR (10) UNIQUE not null,
+contrasenaEntrenador VARCHAR (10) not null,
+nombreEntrenador VARCHAR (10) not null,
+apellido1Entrenador VARCHAR (10) not null,
+apellido2Entrenador VARCHAR (10) not null,
+provinciaEntrenador varchar(10) not null,
+cantonEntrenador varchar(10) not null,
+distritoEntrenador varchar(10) not null,
+direccionEntrenador varchar(30) not null,
+telefonoEntrenador varchar(9) not null,
+correoElectronicoEntrenador varchar(30) not null,
+sitiowebEntrenador varchar(30) not null, -- le quité el not null, qué pasa si el usuario no tiene uno? si mamon 
+perfilFBEntrenador varchar (10) not null,
+perfilTWEntrenador varchar (10) not null,
+perfilIGEntrenador varchar (10) not null,
 )
-create table GestionMovPK
+
+
+create table Bitacora
 (
-GestionPKID int foreign key(GestionPKID) references Pokemon(PokemonID),  
-IDEntrenador int foreign key (IDEntrenador) references Entrenador (IDEntrenador),
-IDMovimiento int foreign key (IDMovimiento) references Movimientos (IDMovimiento),
-)
-create table GestionPK
-(
-IDEntrenador int foreign key (IDEntrenador) references Entrenador (IDEntrenador),
-PokemonID int foreign key (PokemonID) references Pokemon (Pokemon ID),
-estado varchar (30) not null,
-)
-create table Bitacora(
+ID_Bitacora int IDENTITY (0, 1) PRIMARY KEY not null,
 fecha date,
-aventura varchar (70),
-IDEntrenador int foreign key (IDEntrenador) references Entrenador (IDEntrenador),
-)
-create table Usuario(
-email varchar (30) UNIQUE not null,
-username varchar (15) PRIMARY KEY UNIQUE not null,
-contrasena varchar (20) not null,
+EntrenadorID int foreign key (EntrenadorID) references Entrenadores (EntrenadorID),
 )
 
-create table Cliente(
-nombreCl varchar (15) not null,
-apellido1Cl varchar (15) not null,
-apellido2Cl varchar (15) not null,
-cedulaCl int UNIQUE not null,
-provinciaCl varchar (15) not null,
-cantonCl varchar (15) not null,
-distrito varchar (15) not null,
-emailCL  varchar (15) not null UNIQUE,
-telefonoCl int not null,
-ubicacionCL varchar (15) not null,
-)
 
-ALTER TABLE Pokemon
-ADD FOREIGN KEY (IDEntrenador) references Entrenadores (IDEntrenador);
+/* NOTAS IMPORTANTES
+Todos los int's como cedula, ID's, telefonos, etc, los cambiamos para varchar, ya que a la hora de manipular, es más fácil manipular varchar's
+
+*/
+
+--QUERY's
+
+

@@ -85,10 +85,10 @@ distritoEntrenador varchar(10) not null,
 direccionEntrenador varchar(30) not null,
 telefonoEntrenador varchar(9) not null,
 correoElectronicoEntrenador varchar(30) not null,
-sitiowebEntrenador varchar(30) not null, -- le quité el not null, qué pasa si el usuario no tiene uno? si mamon 
-perfilFBEntrenador varchar (10) not null,
-perfilTWEntrenador varchar (10) not null,
-perfilIGEntrenador varchar (10) not null,
+sitiowebEntrenador varchar(30), -- le quité el not null, qué pasa si el usuario no tiene uno? si mamon 
+perfilFBEntrenador varchar (10),
+perfilTWEntrenador varchar (10),
+perfilIGEntrenador varchar (10),
 )
 
 

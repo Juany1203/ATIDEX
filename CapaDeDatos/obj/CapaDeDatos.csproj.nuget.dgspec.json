@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juany\\OneDrive\\Documents\\universidad\\SEMESTRE 3\\Base de Datos\\proyectos\\Proyecto1 ATIDEX\\Atidex\\CapaDeDatos\\CapaDeDatos.csproj": {}
+    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juany\\OneDrive\\Documents\\universidad\\SEMESTRE 3\\Base de Datos\\proyectos\\Proyecto1 ATIDEX\\Atidex\\CapaDeDatos\\CapaDeDatos.csproj": {
+    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juany\\OneDrive\\Documents\\universidad\\SEMESTRE 3\\Base de Datos\\proyectos\\Proyecto1 ATIDEX\\Atidex\\CapaDeDatos\\CapaDeDatos.csproj",
+        "projectUniqueName": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
         "projectName": "CapaDeDatos",
-        "projectPath": "C:\\Users\\juany\\OneDrive\\Documents\\universidad\\SEMESTRE 3\\Base de Datos\\proyectos\\Proyecto1 ATIDEX\\Atidex\\CapaDeDatos\\CapaDeDatos.csproj",
+        "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
         "packagesPath": "C:\\Users\\juany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juany\\OneDrive\\Documents\\universidad\\SEMESTRE 3\\Base de Datos\\proyectos\\Proyecto1 ATIDEX\\Atidex\\CapaDeDatos\\obj\\",
+        "outputPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\juany\\AppData\\Roaming\\NuGet\\NuGet.Config",

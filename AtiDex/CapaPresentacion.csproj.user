@@ -4,9 +4,21 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>CapaPresentacion</ActiveDebugProfile>
+    <ActiveDebugProfile>AtiDex</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="INTERFAZ ADMINISTRADOR\FormAdminPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="INTERFAZ ADMINISTRADOR\FormAdminTipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="INTERFAZ ADMINISTRADOR\FormAdminUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="INTERFAZ ADMINISTRADOR\FormAdminMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="INTERFAZ ENTRENADOR\FormBitacora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -23,6 +35,15 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="INTERFAZ ENTRENADOR\InterfazDelEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="INTERFAZ VISITANTE\FormVisitanteEntrenadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="INTERFAZ VISITANTE\FormVisitantePokemones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="INTERFAZ VISITANTE\FormVisitanteMovimientos.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

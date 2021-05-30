@@ -30,3 +30,4 @@ C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debu
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormVisitanteMovimientos.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormVisitantePokemones.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.InterfazDelVisitante.resources
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormLogin.resources

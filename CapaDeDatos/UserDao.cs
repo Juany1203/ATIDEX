@@ -29,23 +29,22 @@ namespace CapaDeDatos
                     {
                         while (reader.Read())
                         {
-                            //UserLoginCache.IdUser = reader.GetInt32(0);
-                            //UserLoginCache.UserUsuario= reader.GetString(1);
-                            //UserLoginCache.PassUsuario = reader.GetString(2);
+                            UserLoginCache.IdUser = reader.GetInt32(0);
+                            UserLoginCache.PassUsuario = reader.GetString(1);
                             UserLoginCache.TipoUsuario = reader.GetBoolean(2);
-                            /*UserLoginCache.NombreUsuario = reader.GetString(4);
-                            UserLoginCache.Apellido1Usuario = reader.GetString(5);
-                            UserLoginCache.Apellido2Usuario = reader.GetString(6); 
-                            UserLoginCache.provinciaUsuario = reader.GetString(7);
-                            UserLoginCache.cantonUsuario = reader.GetString(8); 
-                            UserLoginCache.distritoUsuario = reader.GetString(9); 
-                            UserLoginCache.direccionUsuario = reader.GetString(10);
-                            UserLoginCache.telefonoUsuario = reader.GetString(11);
-                            UserLoginCache.correoUsuario = reader.GetString(12);
-                            UserLoginCache.sitiowebUsuario = reader.GetString(13);
-                            UserLoginCache.perfilfbUsuario = reader.GetString(14);
-                            UserLoginCache.perfiltwUsuario = reader.GetString(15);
-                            UserLoginCache.perfiligUsuario= reader.GetString(16);*/
+                            UserLoginCache.NombreUsuario = reader.GetString(3);
+                            UserLoginCache.Apellido1Usuario = reader.GetString(4);
+                            UserLoginCache.Apellido2Usuario = reader.GetString(5); 
+                            UserLoginCache.provinciaUsuario = reader.GetString(6);
+                            UserLoginCache.cantonUsuario = reader.GetString(7); 
+                            UserLoginCache.distritoUsuario = reader.GetString(8); 
+                            UserLoginCache.direccionUsuario = reader.GetString(9);
+                            UserLoginCache.telefonoUsuario = reader.GetString(10);
+                            UserLoginCache.correoUsuario = reader.GetString(11);
+                            UserLoginCache.sitiowebUsuario = reader.GetString(12);
+                            UserLoginCache.perfilfbUsuario = reader.GetString(13);
+                            UserLoginCache.perfiltwUsuario = reader.GetString(14);
+                            UserLoginCache.perfiligUsuario= reader.GetString(15);
 
                         }
 

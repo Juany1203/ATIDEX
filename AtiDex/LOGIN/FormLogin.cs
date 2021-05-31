@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using CapaDeNegocio;
-
+using CapaComun.Cache;
 
 
 namespace Atidex
@@ -48,11 +48,22 @@ namespace Atidex
                     var validLogin = user.LoginUser(TextboxUSER.Text, TextBoxPASS.Text);
                     if (validLogin == true)
                     {
+                        if (UserLoginCache.TipoUsuario == true)
+                        {
+                            InterfazDelAdmin mainMenu = new InterfazDelAdmin();
+                            mainMenu.Show();
+                            mainMenu.FormClosed += Logout;
+                            this.Hide();
 
-                        InterfazDelAdmin mainMenu = new InterfazDelAdmin();
-                        mainMenu.Show();
-                        mainMenu.FormClosed += Logout;
-                        this.Hide();
+                        }
+                        else
+                        {
+                            InterfazDelEntrenador mainMenu = new InterfazDelEntrenador();
+                            mainMenu.Show();
+                            mainMenu.FormClosed += Logout;
+                            this.Hide();
+
+                        }
                     }
                     else
                     {
@@ -85,6 +96,14 @@ namespace Atidex
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkVISITANTE_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            InterfazDelVisitante mainMenu = new InterfazDelVisitante();
+            mainMenu.Show();
+            mainMenu.FormClosed += Logout;
+            this.Hide();
         }
     }
 }

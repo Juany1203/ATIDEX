@@ -145,6 +145,7 @@ namespace Atidex
             this.linkVISITANTE.TabIndex = 8;
             this.linkVISITANTE.TabStop = true;
             this.linkVISITANTE.Text = "Acceder como visitante";
+            this.linkVISITANTE.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkVISITANTE_LinkClicked);
             // 
             // linkRegistrar
             // 

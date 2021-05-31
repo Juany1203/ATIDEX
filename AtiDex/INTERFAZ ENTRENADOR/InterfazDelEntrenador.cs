@@ -145,8 +145,11 @@ namespace Atidex
 
         }
 
-
-
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea cerrar sesión?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
+        }
     }
 
 }

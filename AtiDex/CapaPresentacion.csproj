@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CapaComun\CapaComun.csproj" />
     <ProjectReference Include="..\CapaDeNegocio\CapaDeNegocio.csproj" />
   </ItemGroup>
 

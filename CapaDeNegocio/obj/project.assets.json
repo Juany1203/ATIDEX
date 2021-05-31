@@ -131,10 +131,24 @@
           }
         }
       },
+      "CapaComun/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CapaComun.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaComun.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "CapaDeDatos/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "CapaComun": "1.0.0",
           "System.Data.SqlClient": "4.8.2"
         },
         "compile": {
@@ -463,6 +477,11 @@
         "version.txt"
       ]
     },
+    "CapaComun/1.0.0": {
+      "type": "project",
+      "path": "../CapaComun/CapaComun.csproj",
+      "msbuildProject": "../CapaComun/CapaComun.csproj"
+    },
     "CapaDeDatos/1.0.0": {
       "type": "project",
       "path": "../CapaDeDatos/CapaDeDatos.csproj",
@@ -471,6 +490,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CapaComun >= 1.0.0",
       "CapaDeDatos >= 1.0.0"
     ]
   },
@@ -501,6 +521,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj": {
+              "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj"
+            },
             "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
               "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj"
             }

@@ -41,6 +41,7 @@ namespace Atidex
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.LOGO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BottonInicio)).BeginInit();
@@ -220,7 +221,7 @@ namespace Atidex
             // 
             // panelDesktop
             // 
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelDesktop.Location = new System.Drawing.Point(220, 65);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(881, 552);
@@ -238,6 +239,7 @@ namespace Atidex
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(220, 0);
@@ -245,6 +247,16 @@ namespace Atidex
             this.panel1.Size = new System.Drawing.Size(881, 65);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_2);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(0, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(268, 44);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Administrador";
             // 
             // InterfazDelAdmin
             // 
@@ -282,6 +294,7 @@ namespace Atidex
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton LogoutButton;
+        private System.Windows.Forms.Label label2;
     }
 }
 

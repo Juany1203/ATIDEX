@@ -30,6 +30,7 @@ namespace Atidex
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
@@ -40,7 +41,7 @@ namespace Atidex
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.LOGO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BottonInicio)).BeginInit();
@@ -63,6 +64,28 @@ namespace Atidex
             this.panelMenu.Size = new System.Drawing.Size(220, 617);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconButton5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.iconButton5.IconColor = System.Drawing.Color.White;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.Location = new System.Drawing.Point(0, 557);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton5.Size = new System.Drawing.Size(220, 60);
+            this.iconButton5.TabIndex = 6;
+            this.iconButton5.Text = "Cerrar Sesión";
+            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // iconButton4
             // 
@@ -199,6 +222,7 @@ namespace Atidex
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(220, 0);
@@ -223,26 +247,15 @@ namespace Atidex
             this.panelDesktop.Size = new System.Drawing.Size(881, 552);
             this.panelDesktop.TabIndex = 2;
             // 
-            // iconButton5
+            // label2
             // 
-            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(0, 557);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton5.Size = new System.Drawing.Size(220, 60);
-            this.iconButton5.TabIndex = 6;
-            this.iconButton5.Text = "Cerrar Sesión";
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton5.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(0, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(213, 44);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Entrenador";
             // 
             // InterfazDelEntrenador
             // 
@@ -254,6 +267,7 @@ namespace Atidex
             this.Controls.Add(this.panelMenu);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "InterfazDelEntrenador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
@@ -279,6 +293,7 @@ namespace Atidex
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton iconButton5;
+        private System.Windows.Forms.Label label2;
     }
 }
 

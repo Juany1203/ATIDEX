@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CapaComun\CapaComun.csproj" />
     <ProjectReference Include="..\CapaDeDatos\CapaDeDatos.csproj" />
   </ItemGroup>
 

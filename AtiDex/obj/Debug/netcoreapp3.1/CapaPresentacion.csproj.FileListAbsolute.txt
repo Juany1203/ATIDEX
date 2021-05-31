@@ -31,3 +31,13 @@ C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debu
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormVisitantePokemones.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.InterfazDelVisitante.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormLogin.resources
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaDeDatos.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaDeNegocio.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaDeNegocio.pdb
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaDeDatos.pdb

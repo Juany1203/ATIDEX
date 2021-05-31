@@ -5,6 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using CapaDeNegocio;
+
+
 
 namespace Atidex
 {
@@ -33,6 +36,55 @@ namespace Atidex
         private void TextBoxPASS_MouseEnter(object sender, EventArgs e)
         {
             TextBoxPASS.UseSystemPasswordChar = true;
+        }
+
+        private void BotonACCEDER_Click(object sender, EventArgs e)
+        {
+            if (TextboxUSER.Text != "")
+            {
+                if (TextBoxPASS.Text != "")
+                {
+                    UserModel user = new UserModel();
+                    var validLogin = user.LoginUser(TextboxUSER.Text, TextBoxPASS.Text);
+                    if (validLogin == true)
+                    {
+
+                        InterfazDelAdmin mainMenu = new InterfazDelAdmin();
+                        mainMenu.Show();
+                        mainMenu.FormClosed += Logout;
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msgError("El username o la contraseña son incorrectos");
+                        TextBoxPASS.Clear();
+                        TextboxUSER.Focus();
+                    }
+                }
+                else msgError("Por favor ingrese una contraseña");
+
+            }
+            else
+                msgError("Por favor ingrese un username");
+        }
+        private void msgError (string msg)
+        {
+            ErrorMessage.Text = msg;
+            ErrorMessage.Visible = true;
+        }
+        private void Logout (object sender, FormClosedEventArgs e)
+        {
+            TextBoxPASS.Clear();
+            TextboxUSER.Clear();
+            ErrorMessage.Visible = false;
+            this.Show();
+            TextboxUSER.Focus();
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,6 +30,7 @@ namespace Atidex
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.LogoutButton = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
@@ -49,6 +50,7 @@ namespace Atidex
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panelMenu.Controls.Add(this.LogoutButton);
             this.panelMenu.Controls.Add(this.iconButton4);
             this.panelMenu.Controls.Add(this.iconButton3);
             this.panelMenu.Controls.Add(this.iconButton2);
@@ -61,6 +63,28 @@ namespace Atidex
             this.panelMenu.Size = new System.Drawing.Size(220, 617);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // LogoutButton
+            // 
+            this.LogoutButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.LogoutButton.FlatAppearance.BorderSize = 0;
+            this.LogoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogoutButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LogoutButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LogoutButton.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.LogoutButton.IconColor = System.Drawing.Color.White;
+            this.LogoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.LogoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogoutButton.Location = new System.Drawing.Point(0, 557);
+            this.LogoutButton.Name = "LogoutButton";
+            this.LogoutButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.LogoutButton.Size = new System.Drawing.Size(220, 60);
+            this.LogoutButton.TabIndex = 6;
+            this.LogoutButton.Text = "Cerrar sesión";
+            this.LogoutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogoutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // iconButton4
             // 
@@ -232,6 +256,7 @@ namespace Atidex
             this.Controls.Add(this.panelMenu);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "InterfazDelAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
@@ -256,6 +281,7 @@ namespace Atidex
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton LogoutButton;
     }
 }
 

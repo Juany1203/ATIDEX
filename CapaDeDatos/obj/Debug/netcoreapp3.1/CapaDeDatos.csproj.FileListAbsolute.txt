@@ -1,0 +1,9 @@
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeDatos\bin\Debug\netcoreapp3.1\CapaDeDatos.deps.json
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeDatos\bin\Debug\netcoreapp3.1\CapaDeDatos.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeDatos\bin\Debug\netcoreapp3.1\CapaDeDatos.pdb
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.csprojAssemblyReference.cache
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.AssemblyInfoInputs.cache
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.AssemblyInfo.cs
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.csproj.CoreCompileInputs.cache
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.dll
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.pdb

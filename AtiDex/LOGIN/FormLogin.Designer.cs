@@ -39,6 +39,7 @@ namespace Atidex
             this.label3 = new System.Windows.Forms.Label();
             this.linkVISITANTE = new System.Windows.Forms.LinkLabel();
             this.linkRegistrar = new System.Windows.Forms.LinkLabel();
+            this.ErrorMessage = new System.Windows.Forms.Label();
             BotonACCEDER = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,13 +51,14 @@ namespace Atidex
             BotonACCEDER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BotonACCEDER.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BotonACCEDER.ForeColor = System.Drawing.Color.Maroon;
-            BotonACCEDER.Location = new System.Drawing.Point(288, 209);
+            BotonACCEDER.Location = new System.Drawing.Point(288, 222);
             BotonACCEDER.Name = "BotonACCEDER";
             BotonACCEDER.Size = new System.Drawing.Size(418, 43);
             BotonACCEDER.TabIndex = 7;
             BotonACCEDER.Text = "ACCEDER";
             BotonACCEDER.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             BotonACCEDER.UseVisualStyleBackColor = false;
+            BotonACCEDER.Click += new System.EventHandler(this.BotonACCEDER_Click);
             // 
             // panel1
             // 
@@ -65,7 +67,7 @@ namespace Atidex
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 324);
+            this.panel1.Size = new System.Drawing.Size(250, 371);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -137,7 +139,7 @@ namespace Atidex
             this.linkVISITANTE.AutoSize = true;
             this.linkVISITANTE.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.linkVISITANTE.LinkColor = System.Drawing.Color.Maroon;
-            this.linkVISITANTE.Location = new System.Drawing.Point(408, 298);
+            this.linkVISITANTE.Location = new System.Drawing.Point(405, 335);
             this.linkVISITANTE.Name = "linkVISITANTE";
             this.linkVISITANTE.Size = new System.Drawing.Size(163, 17);
             this.linkVISITANTE.TabIndex = 8;
@@ -149,12 +151,28 @@ namespace Atidex
             this.linkRegistrar.AutoSize = true;
             this.linkRegistrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.linkRegistrar.LinkColor = System.Drawing.Color.Maroon;
-            this.linkRegistrar.Location = new System.Drawing.Point(391, 270);
+            this.linkRegistrar.Location = new System.Drawing.Point(391, 307);
             this.linkRegistrar.Name = "linkRegistrar";
             this.linkRegistrar.Size = new System.Drawing.Size(195, 17);
             this.linkRegistrar.TabIndex = 11;
             this.linkRegistrar.TabStop = true;
             this.linkRegistrar.Text = "Registrarse como entrenador";
+            // 
+            // ErrorMessage
+            // 
+            this.ErrorMessage.AutoSize = true;
+            this.ErrorMessage.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ErrorMessage.ForeColor = System.Drawing.Color.Maroon;
+            this.ErrorMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ErrorMessage.Location = new System.Drawing.Point(288, 192);
+            this.ErrorMessage.Name = "ErrorMessage";
+            this.ErrorMessage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ErrorMessage.Size = new System.Drawing.Size(90, 17);
+            this.ErrorMessage.TabIndex = 12;
+            this.ErrorMessage.Text = "Error Message";
+            this.ErrorMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ErrorMessage.Visible = false;
+            this.ErrorMessage.Click += new System.EventHandler(this.label4_Click);
             // 
             // FormLogin
             // 
@@ -162,7 +180,8 @@ namespace Atidex
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(764, 324);
+            this.ClientSize = new System.Drawing.Size(764, 371);
+            this.Controls.Add(this.ErrorMessage);
             this.Controls.Add(this.linkRegistrar);
             this.Controls.Add(this.linkVISITANTE);
             this.Controls.Add(BotonACCEDER);
@@ -196,5 +215,6 @@ namespace Atidex
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkVISITANTE;
         private System.Windows.Forms.LinkLabel linkRegistrar;
+        private System.Windows.Forms.Label ErrorMessage;
     }
 }

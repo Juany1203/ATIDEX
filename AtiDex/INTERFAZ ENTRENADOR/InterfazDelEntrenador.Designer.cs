@@ -39,9 +39,9 @@ namespace Atidex
             this.LOGO = new System.Windows.Forms.Panel();
             this.BottonInicio = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.LOGO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BottonInicio)).BeginInit();
@@ -230,6 +230,16 @@ namespace Atidex
             this.panel1.Size = new System.Drawing.Size(881, 65);
             this.panel1.TabIndex = 1;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(0, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(213, 44);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Entrenador";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -247,16 +257,6 @@ namespace Atidex
             this.panelDesktop.Size = new System.Drawing.Size(881, 552);
             this.panelDesktop.TabIndex = 2;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(0, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(213, 44);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Entrenador";
-            // 
             // InterfazDelEntrenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -268,7 +268,7 @@ namespace Atidex
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "InterfazDelEntrenador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Atidex";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
             this.LOGO.ResumeLayout(false);

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CapaComun.Cache
 {
-    public static class UserLoginCache
+    public class UserLoginCache
     {
         public static int IdUser { get; set; }
 

@@ -1,7 +1,7 @@
 ﻿
 namespace Atidex
 {
-    partial class EmailTextBox
+    partial class FormPerfil
     {
         /// <summary>
         /// Required designer variable.
@@ -51,7 +51,7 @@ namespace Atidex
             this.label9 = new System.Windows.Forms.Label();
             this.SitioWebTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.EmailtextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.FacebookTextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -59,8 +59,8 @@ namespace Atidex
             this.label13 = new System.Windows.Forms.Label();
             this.InstagramTextBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnGuardarEntrenador = new System.Windows.Forms.Button();
+            this.botonEliminarEntrenador = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Perfil1
@@ -274,13 +274,13 @@ namespace Atidex
             this.label10.TabIndex = 21;
             this.label10.Text = "Sitio Web";
             // 
-            // textBox12
+            // EmailtextBox
             // 
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox12.Location = new System.Drawing.Point(576, 79);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(212, 22);
-            this.textBox12.TabIndex = 24;
+            this.EmailtextBox.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EmailtextBox.Location = new System.Drawing.Point(576, 79);
+            this.EmailtextBox.Name = "EmailtextBox";
+            this.EmailtextBox.Size = new System.Drawing.Size(212, 22);
+            this.EmailtextBox.TabIndex = 24;
             // 
             // label11
             // 
@@ -350,46 +350,48 @@ namespace Atidex
             this.label14.TabIndex = 29;
             this.label14.Text = "Instagram";
             // 
-            // button1
+            // BtnGuardarEntrenador
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(439, 335);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(349, 38);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnGuardarEntrenador.BackColor = System.Drawing.Color.Maroon;
+            this.BtnGuardarEntrenador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnGuardarEntrenador.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnGuardarEntrenador.ForeColor = System.Drawing.Color.White;
+            this.BtnGuardarEntrenador.Location = new System.Drawing.Point(439, 335);
+            this.BtnGuardarEntrenador.Name = "BtnGuardarEntrenador";
+            this.BtnGuardarEntrenador.Size = new System.Drawing.Size(349, 38);
+            this.BtnGuardarEntrenador.TabIndex = 31;
+            this.BtnGuardarEntrenador.Text = "Guardar";
+            this.BtnGuardarEntrenador.UseVisualStyleBackColor = false;
+            this.BtnGuardarEntrenador.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // botonEliminarEntrenador
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(439, 384);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(349, 38);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "Eliminar perfil";
-            this.button2.UseVisualStyleBackColor = false;
+            this.botonEliminarEntrenador.BackColor = System.Drawing.Color.Maroon;
+            this.botonEliminarEntrenador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.botonEliminarEntrenador.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.botonEliminarEntrenador.ForeColor = System.Drawing.Color.White;
+            this.botonEliminarEntrenador.Location = new System.Drawing.Point(439, 384);
+            this.botonEliminarEntrenador.Name = "botonEliminarEntrenador";
+            this.botonEliminarEntrenador.Size = new System.Drawing.Size(349, 38);
+            this.botonEliminarEntrenador.TabIndex = 32;
+            this.botonEliminarEntrenador.Text = "Eliminar perfil";
+            this.botonEliminarEntrenador.UseVisualStyleBackColor = false;
+            this.botonEliminarEntrenador.Click += new System.EventHandler(this.button2_Click);
             // 
-            // EmailTextBox
+            // FormPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 564);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.botonEliminarEntrenador);
+            this.Controls.Add(this.BtnGuardarEntrenador);
             this.Controls.Add(this.InstagramTextBox);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.TwiterTextBox);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.FacebookTextBox);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.EmailtextBox);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.SitioWebTextBox);
             this.Controls.Add(this.label10);
@@ -413,7 +415,7 @@ namespace Atidex
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Perfil1);
-            this.Name = "EmailTextBox";
+            this.Name = "FormPerfil";
             this.Text = "FormPerfil";
             this.Load += new System.EventHandler(this.FormPerfil_Load);
             this.ResumeLayout(false);
@@ -445,7 +447,7 @@ namespace Atidex
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox SitioWebTextBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox EmailtextBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox FacebookTextBox;
         private System.Windows.Forms.Label label12;
@@ -453,7 +455,7 @@ namespace Atidex
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox InstagramTextBox;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnGuardarEntrenador;
+        private System.Windows.Forms.Button botonEliminarEntrenador;
     }
 }

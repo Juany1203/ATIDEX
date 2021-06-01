@@ -101,7 +101,7 @@ namespace Atidex
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, Color.FromArgb(200, 120, 0));
-            OpenChildForm (new EmailTextBox());
+            OpenChildForm (new FormPerfil());
 
         }
 
@@ -148,7 +148,12 @@ namespace Atidex
         private void iconButton5_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Desea cerrar sesión?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                this.Close();
+                CerrarParentForm();
+        }
+        public void CerrarParentForm()
+        {
+            this.Close();
+            this.Dispose();
         }
     }
 

@@ -61,6 +61,7 @@ namespace Atidex
             this.label14 = new System.Windows.Forms.Label();
             this.BtnGuardarEntrenador = new System.Windows.Forms.Button();
             this.botonEliminarEntrenador = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Perfil1
@@ -258,7 +259,7 @@ namespace Atidex
             // SitioWebTextBox
             // 
             this.SitioWebTextBox.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SitioWebTextBox.Location = new System.Drawing.Point(576, 129);
+            this.SitioWebTextBox.Location = new System.Drawing.Point(576, 162);
             this.SitioWebTextBox.Name = "SitioWebTextBox";
             this.SitioWebTextBox.Size = new System.Drawing.Size(212, 22);
             this.SitioWebTextBox.TabIndex = 22;
@@ -268,7 +269,7 @@ namespace Atidex
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.Maroon;
-            this.label10.Location = new System.Drawing.Point(439, 127);
+            this.label10.Location = new System.Drawing.Point(439, 160);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(91, 22);
             this.label10.TabIndex = 21;
@@ -296,7 +297,7 @@ namespace Atidex
             // FacebookTextBox
             // 
             this.FacebookTextBox.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FacebookTextBox.Location = new System.Drawing.Point(576, 183);
+            this.FacebookTextBox.Location = new System.Drawing.Point(576, 216);
             this.FacebookTextBox.Name = "FacebookTextBox";
             this.FacebookTextBox.Size = new System.Drawing.Size(212, 22);
             this.FacebookTextBox.TabIndex = 26;
@@ -306,7 +307,7 @@ namespace Atidex
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.Maroon;
-            this.label12.Location = new System.Drawing.Point(439, 183);
+            this.label12.Location = new System.Drawing.Point(439, 216);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(103, 22);
             this.label12.TabIndex = 25;
@@ -315,7 +316,7 @@ namespace Atidex
             // TwiterTextBox
             // 
             this.TwiterTextBox.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TwiterTextBox.Location = new System.Drawing.Point(576, 232);
+            this.TwiterTextBox.Location = new System.Drawing.Point(576, 265);
             this.TwiterTextBox.Name = "TwiterTextBox";
             this.TwiterTextBox.Size = new System.Drawing.Size(212, 22);
             this.TwiterTextBox.TabIndex = 28;
@@ -325,7 +326,7 @@ namespace Atidex
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.Maroon;
-            this.label13.Location = new System.Drawing.Point(439, 233);
+            this.label13.Location = new System.Drawing.Point(439, 266);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(69, 22);
             this.label13.TabIndex = 27;
@@ -334,7 +335,7 @@ namespace Atidex
             // InstagramTextBox
             // 
             this.InstagramTextBox.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.InstagramTextBox.Location = new System.Drawing.Point(576, 284);
+            this.InstagramTextBox.Location = new System.Drawing.Point(576, 317);
             this.InstagramTextBox.Name = "InstagramTextBox";
             this.InstagramTextBox.Size = new System.Drawing.Size(212, 22);
             this.InstagramTextBox.TabIndex = 30;
@@ -344,7 +345,7 @@ namespace Atidex
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.Color.Maroon;
-            this.label14.Location = new System.Drawing.Point(439, 285);
+            this.label14.Location = new System.Drawing.Point(439, 318);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(103, 22);
             this.label14.TabIndex = 29;
@@ -356,7 +357,7 @@ namespace Atidex
             this.BtnGuardarEntrenador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnGuardarEntrenador.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnGuardarEntrenador.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardarEntrenador.Location = new System.Drawing.Point(439, 335);
+            this.BtnGuardarEntrenador.Location = new System.Drawing.Point(439, 368);
             this.BtnGuardarEntrenador.Name = "BtnGuardarEntrenador";
             this.BtnGuardarEntrenador.Size = new System.Drawing.Size(349, 38);
             this.BtnGuardarEntrenador.TabIndex = 31;
@@ -370,7 +371,7 @@ namespace Atidex
             this.botonEliminarEntrenador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.botonEliminarEntrenador.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.botonEliminarEntrenador.ForeColor = System.Drawing.Color.White;
-            this.botonEliminarEntrenador.Location = new System.Drawing.Point(439, 384);
+            this.botonEliminarEntrenador.Location = new System.Drawing.Point(439, 417);
             this.botonEliminarEntrenador.Name = "botonEliminarEntrenador";
             this.botonEliminarEntrenador.Size = new System.Drawing.Size(349, 38);
             this.botonEliminarEntrenador.TabIndex = 32;
@@ -378,11 +379,23 @@ namespace Atidex
             this.botonEliminarEntrenador.UseVisualStyleBackColor = false;
             this.botonEliminarEntrenador.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.Color.Maroon;
+            this.label15.Location = new System.Drawing.Point(439, 112);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(144, 33);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "Opcional:";
+            // 
             // FormPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 564);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.botonEliminarEntrenador);
             this.Controls.Add(this.BtnGuardarEntrenador);
             this.Controls.Add(this.InstagramTextBox);
@@ -457,5 +470,6 @@ namespace Atidex
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button BtnGuardarEntrenador;
         private System.Windows.Forms.Button botonEliminarEntrenador;
+        private System.Windows.Forms.Label label15;
     }
 }

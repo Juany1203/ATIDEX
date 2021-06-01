@@ -105,5 +105,14 @@ namespace Atidex
             mainMenu.FormClosed += Logout;
             this.Hide();
         }
+
+        private void linkRegistrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormRegistro Registro = new FormRegistro();
+            Registro.Show();
+            Registro.FormClosed += Logout;
+            this.Hide();
+
+        }
     }
 }

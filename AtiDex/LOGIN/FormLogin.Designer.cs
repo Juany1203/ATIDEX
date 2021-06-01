@@ -158,6 +158,7 @@ namespace Atidex
             this.linkRegistrar.TabIndex = 11;
             this.linkRegistrar.TabStop = true;
             this.linkRegistrar.Text = "Registrarse como entrenador";
+            this.linkRegistrar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegistrar_LinkClicked);
             // 
             // ErrorMessage
             // 

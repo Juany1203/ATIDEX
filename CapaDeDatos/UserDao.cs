@@ -155,8 +155,34 @@ namespace CapaDeDatos
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
 
+        }
+        public DataTable MostrarBitacora()
+        {
+            int IdUsuario = UserLoginCache.IdUser;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "MostrarBitacora";
+            comando.Parameters.AddWithValue("@IDUser", IdUsuario);
+            comando.CommandType = CommandType.StoredProcedure;
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+            return tabla;
+        }
 
-
+        public void InsertarBitacora(string Dia, string Mes, string Ano, string descripcion)
+        {
+            int IdUsuarioInsertar = UserLoginCache.IdUser;
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "InsertarBitacora";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@Dia", Dia);
+            comando.Parameters.AddWithValue("@Mes", Mes);
+            comando.Parameters.AddWithValue("@Año", Ano);
+            comando.Parameters.AddWithValue("@Descripcion", descripcion);
+            comando.Parameters.AddWithValue("@IDEntrenador", IdUsuarioInsertar);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
         }
 
 

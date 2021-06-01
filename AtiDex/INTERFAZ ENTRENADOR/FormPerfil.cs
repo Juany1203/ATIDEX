@@ -7,6 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 using CapaComun.Cache;
 using CapaDeNegocio;
+using CapaPresentacion;
+
 
 namespace Atidex
 {
@@ -15,6 +17,7 @@ namespace Atidex
         
         CN_Usuario UsuarioCN = new CN_Usuario();
         private string idUsuario = Convert.ToString(UserLoginCache.IdUser);
+        InterfazDelEntrenador interfazE = new InterfazDelEntrenador();
 
 
         public FormPerfil()
@@ -26,7 +29,7 @@ namespace Atidex
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void FormPerfil_Load(object sender, EventArgs e)
@@ -59,22 +62,31 @@ namespace Atidex
 
         private void button1_Click(object sender, EventArgs e)
         {
-            InterfazDelEntrenador interfazE = new InterfazDelEntrenador();
+            
             try
             {
                
                 if (MessageBox.Show("¿Desea modificar el perfil? \n se cerrará la sesión.", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     UsuarioCN.ModificarUsuario(idUsuario, UserTextBox.Text, PassTextBox.Text, false, NombreTextBox.Text, Apellido1TextBox.Text, Apellido2TextBox.Text, ProvinciaTextBox.Text, CantonTextBox.Text, DistritoTextBox.Text, DireccionTextBox.Text, TelefonoTextBox.Text, EmailtextBox.Text, SitioWebTextBox.Text, FacebookTextBox.Text, TwiterTextBox.Text, InstagramTextBox.Text);
-                    this.Close();
-                    ParentForm.Close();
-                   ;
+                    interfazE.Close();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
             }
+        }
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+
+
+        }
+        public void CerrarParentForm()
+        {
+            this.Close();
+            this.Dispose();
         }
 
         private void button2_Click(object sender, EventArgs e)

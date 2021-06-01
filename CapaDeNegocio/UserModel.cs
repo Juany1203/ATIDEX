@@ -47,6 +47,21 @@ namespace CapaDeNegocio
             UsuarioCD.EliminarUsuario(Convert.ToInt32(IDUser));
         }
 
+
+        //BITACORAS
+
+        //Mostrar Bitacora
+        public DataTable MostrarBitacora()
+        {
+            DataTable tablaBitacora = new DataTable();
+            tablaBitacora = UsuarioCD.MostrarBitacora();
+            return tablaBitacora;
+
+        }
+        public void InsertarBit (string Dia, string Mes, string Ano, string descripcion)
+        {
+            UsuarioCD.InsertarBitacora(Dia, Mes, Ano, descripcion);
+        }
     }
 
 

@@ -110,7 +110,9 @@ ID_Bitacora int IDENTITY (0, 1) PRIMARY KEY not null,
 Dia varchar(50) not null,
 mes varchar(50) not null,
 año varchar(50) not null,
+Descripcion varchar(500) not null,
 UserIDBitacora int foreign key (UserIDBitacora) references Usuario (UsuarioID),
 )
+drop table Bitacora
 
 

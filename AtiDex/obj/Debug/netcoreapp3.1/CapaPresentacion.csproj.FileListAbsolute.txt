@@ -10,7 +10,6 @@ C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debu
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormBitacora.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormConsulta.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormMovimientos.resources
-C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormPerfil.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormPokemones.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.InterfazDelEntrenador.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\CapaPresentacion.Properties.Resources.resources
@@ -43,3 +42,4 @@ C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debu
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaDeDatos.pdb
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaComun.dll
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaComun.pdb
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.EmailTextBox.resources

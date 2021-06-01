@@ -20,8 +20,8 @@ drop database Atidex
 create table Pokemon
 (
 PokemonID int IDENTITY(0,1) PRIMARY KEY not null,
-nombrePokemon varchar(20) UNIQUE not null,
-generacionPokemon varchar not null,
+nombrePokemon varchar(50) UNIQUE not null,
+generacionPokemon varchar(50) not null,
 legendarioPokemon bit not null,
 imagenPokemon image, 
 )
@@ -32,22 +32,22 @@ imagenPokemon image,
 create table Usuario
 (
 UsuarioID int IDENTITY(0,1) PRIMARY KEY not null,
-UserNameUsuario VARCHAR (10) UNIQUE not null,
-contrasenaUsuario VARCHAR (10) not null,
+UserNameUsuario VARCHAR (100) UNIQUE not null,
+Password VARCHAR (100) not null,
 TipoUsuario bit not null, -- Esto indica si el ususario es admin o entrenador, 1 si es admin 0 si es entrenador
-nombreUsuario VARCHAR (10) not null,
-apellido1Usuario VARCHAR (10) not null,
-apellido2Usuario VARCHAR (10) not null,
-provinciaUsuario varchar(10) not null,
-cantonUsuario varchar(10) not null,
-distritoUsuario varchar(10) not null,
-direccionUsuario varchar(30) not null,
-telefonoUsuario varchar(9) not null,
+nombreUsuario VARCHAR (100) not null,
+apellido1Usuario VARCHAR (100) not null,
+apellido2Usuario VARCHAR (100) not null,
+provinciaUsuario varchar(100) not null,
+cantonUsuario varchar(100) not null,
+distritoUsuario varchar(100) not null,
+direccionUsuario varchar(300) not null,
+telefonoUsuario varchar(30) not null,
 correoElectronicoUsuario varchar(30) not null,
 sitiowebUsuario varchar(30), 
-perfilFBUsuario varchar (10),
-perfilTWUsuario varchar (10),
-perfilIGUsuario varchar (10),
+perfilFBUsuario varchar (50),
+perfilTWUsuario varchar (50),
+perfilIGUsuario varchar (50),
 )
 
 -- tabla que contiene los pokemons por entrenador
@@ -58,12 +58,12 @@ TrainerPokemonID int IDENTITY(0,1) PRIMARY KEY not null,
 EntrenadorIDTrainerPokemon int foreign key(EntrenadorIDTrainerPokemon) references Usuario(UsuarioID),
 PokemonID int foreign key(PokemonID) references Pokemon(PokemonID),
 saludTrainerPokemon varchar not null,
-ataqueEspecialTrainerPokemon varchar not null,
-defensaTrainerEspecialPokemon varchar not null,     
-ataqueTrainerPokemon varchar not null,
-defensaTrainerPokemon varchar not null, 
-velocidadTrainerPokemon varchar not null,
-EstadoPokemon varchar(10) not null,
+ataqueEspecialTrainerPokemon varchar(50) not null,
+defensaTrainerEspecialPokemon varchar(50) not null,     
+ataqueTrainerPokemon varchar(50) not null,
+defensaTrainerPokemon varchar(50) not null, 
+velocidadTrainerPokemon varchar(50) not null,
+EstadoPokemon varchar(50) not null,
 )
 
 -- tabla del los tipos de pokemon y movimientos que hay
@@ -71,7 +71,7 @@ EstadoPokemon varchar(10) not null,
 create table Tipo
 (
 TipoID int IDENTITY(0,1) PRIMARY KEY not null,  
-TipoNombre Varchar(15) UNIQUE not null,
+TipoNombre Varchar(50) UNIQUE not null,
 )
 
 -- Movimientos para asignar
@@ -80,8 +80,8 @@ TipoNombre Varchar(15) UNIQUE not null,
 create table Movimientos
 (
 MovimientoID int IDENTITY(0,1) PRIMARY KEY not null,
-nombreMovimiento varchar(15) not null,
-descripcionMovimiento varchar(15) not null,
+nombreMovimiento varchar(50) not null,
+descripcionMovimiento varchar(50) not null,
 TipoID int foreign key (TipoID) references Tipo(TipoID),
 )
 
@@ -107,7 +107,9 @@ TipoID int foreign key (TipoID) references Tipo(TipoID),
 create table Bitacora
 (
 ID_Bitacora int IDENTITY (0, 1) PRIMARY KEY not null,
-fecha date,
+Dia varchar(50) not null,
+mes varchar(50) not null,
+año varchar(50) not null,
 UserIDBitacora int foreign key (UserIDBitacora) references Usuario (UsuarioID),
 )
 

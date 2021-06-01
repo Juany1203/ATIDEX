@@ -26,7 +26,8 @@ namespace Atidex
 
         private void MostrarUsuarios()
         {
-            dataGridView1.DataSource = UsuarioCN.MostrarUsuario();
+            CN_Usuario Usuario = new CN_Usuario();
+            dataGridView1.DataSource = Usuario.MostrarUsuario();
 
         }
 

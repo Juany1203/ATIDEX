@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {}
+    "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
+    "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
+        "projectUniqueName": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
         "projectName": "CapaDeDatos",
-        "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
-        "packagesPath": "C:\\Users\\juany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\obj\\",
+        "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
+        "packagesPath": "C:\\Users\\Juanca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juanca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

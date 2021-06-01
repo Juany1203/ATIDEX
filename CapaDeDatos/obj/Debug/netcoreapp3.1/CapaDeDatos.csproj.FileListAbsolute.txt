@@ -1,0 +1,9 @@
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.csproj.AssemblyReference.cache
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.AssemblyInfoInputs.cache
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.AssemblyInfo.cs
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.csproj.CoreCompileInputs.cache
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeDatos\bin\Debug\netcoreapp3.1\CapaDeDatos.deps.json
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeDatos\bin\Debug\netcoreapp3.1\CapaDeDatos.dll
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeDatos\bin\Debug\netcoreapp3.1\CapaDeDatos.pdb
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.dll
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeDatos\obj\Debug\netcoreapp3.1\CapaDeDatos.pdb

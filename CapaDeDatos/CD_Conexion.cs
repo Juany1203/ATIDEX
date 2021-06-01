@@ -8,7 +8,7 @@ namespace CapaDeDatos
 {
     public class CD_Conexion
     {
-        private SqlConnection Conexion = new SqlConnection("Server=STEVEN-W10\SQLEXPRESS;DataBase= AtiDex;Integrated Security=true");
+        private SqlConnection Conexion = new SqlConnection("Server=(local);DataBase= AtiDex;Integrated Security=true");
         public SqlConnection AbrirConexion()
         {
             if (Conexion.State == ConnectionState.Closed)

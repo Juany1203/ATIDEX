@@ -23,7 +23,7 @@ namespace Atidex
         private void MostrarPokemon()
         {
             CdN_Pokemon objeto = new CdN_Pokemon();
-            DataGridView.DataSource = objeto.MostrarProd();
+            //DataGridView.DataSource = objeto.MostrarProd();
         }
     }
 }

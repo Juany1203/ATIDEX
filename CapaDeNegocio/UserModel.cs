@@ -23,6 +23,7 @@ namespace CapaDeNegocio
     {
         private CD_Usuarios UsuarioCD = new CD_Usuarios();
 
+        //funcion para mostrar los datos del Usuario
         public DataTable MostrarUsuario()
         {
             DataTable tabla = new DataTable();
@@ -31,9 +32,19 @@ namespace CapaDeNegocio
         }
 
 
-        public void InsertarUsuario (string NombreUsuario, string Password, bool TipoUsuario, string nombreUsuario, string apellido1Usuario, string apellido2Usuario, string provinciaUsuario, string cantonUsuario, string distritoUsuario, string direccionUsuario, string telefonoUsuario, string correoElectronicoUsuario, string sitiowebUsuario, string perfilFBUsuario, string perfilTWUsuario, string perfilIGUsuario)
+        public void InsertarUsuario(string NombreUsuario, string Password, bool TipoUsuario, string nombreUsuario, string apellido1Usuario, string apellido2Usuario, string provinciaUsuario, string cantonUsuario, string distritoUsuario, string direccionUsuario, string telefonoUsuario, string correoElectronicoUsuario, string sitiowebUsuario, string perfilFBUsuario, string perfilTWUsuario, string perfilIGUsuario)
         {
-            UsuarioCD.Insertar(NombreUsuario, Password, TipoUsuario, nombreUsuario, apellido1Usuario, apellido2Usuario, provinciaUsuario, cantonUsuario, distritoUsuario, direccionUsuario, telefonoUsuario, correoElectronicoUsuario, sitiowebUsuario, perfilFBUsuario, perfilTWUsuario, perfilIGUsuario);
+            UsuarioCD.InsertarUsuarioCD(NombreUsuario, Password, TipoUsuario, nombreUsuario, apellido1Usuario, apellido2Usuario, provinciaUsuario, cantonUsuario, distritoUsuario, direccionUsuario, telefonoUsuario, correoElectronicoUsuario, sitiowebUsuario, perfilFBUsuario, perfilTWUsuario, perfilIGUsuario);
+        }
+
+        //funcion para modificar los datos del Usuario
+        public void ModificarUsuario(string id,string NombreUsuario, string Password, bool TipoUsuario, string nombreUsuario, string apellido1Usuario, string apellido2Usuario, string provinciaUsuario, string cantonUsuario, string distritoUsuario, string direccionUsuario, string telefonoUsuario, string correoElectronicoUsuario, string sitiowebUsuario, string perfilFBUsuario, string perfilTWUsuario, string perfilIGUsuario)
+        {
+            UsuarioCD.EditarUsuario(Convert.ToInt32(id),NombreUsuario, Password, TipoUsuario, nombreUsuario, apellido1Usuario, apellido2Usuario, provinciaUsuario, cantonUsuario, distritoUsuario, direccionUsuario, telefonoUsuario, correoElectronicoUsuario, sitiowebUsuario, perfilFBUsuario, perfilTWUsuario, perfilIGUsuario);
+        }
+        public void EliminarUser(string IDUser)
+        {
+            UsuarioCD.EliminarUsuario(Convert.ToInt32(IDUser));
         }
 
     }

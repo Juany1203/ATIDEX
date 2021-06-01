@@ -84,7 +84,7 @@ namespace CapaDeDatos
             return tabla;
         }
 
-        public void Insertar (string NombreUsuario, string Password,bool TipoUsuario,string nombreUsuario, string apellido1Usuario, string apellido2Usuario, string provinciaUsuario, string cantonUsuario, string distritoUsuario, string direccionUsuario, string telefonoUsuario, string correoElectronicoUsuario, string sitiowebUsuario, string perfilFBUsuario, string perfilTWUsuario, string perfilIGUsuario)
+        public void InsertarUsuarioCD (string NombreUsuario, string Password,bool TipoUsuario,string nombreUsuario, string apellido1Usuario, string apellido2Usuario, string provinciaUsuario, string cantonUsuario, string distritoUsuario, string direccionUsuario, string telefonoUsuario, string correoElectronicoUsuario, string sitiowebUsuario, string perfilFBUsuario, string perfilTWUsuario, string perfilIGUsuario)
         {
             int TipoUsuarioInt = 0;
             comando.Connection = conexion.AbrirConexion();
@@ -92,13 +92,72 @@ namespace CapaDeDatos
             {
                 TipoUsuarioInt = 1;
             }
-            comando.CommandText = "Insert into Usuario values ('" + NombreUsuario + "','" + Password + "'," + TipoUsuarioInt + ",'" + nombreUsuario + "','" + apellido1Usuario + "','" + apellido2Usuario + "','" + provinciaUsuario + "','" + cantonUsuario + "', '" + distritoUsuario + "','" + direccionUsuario + "', '" + telefonoUsuario + "','" + correoElectronicoUsuario + "','" + sitiowebUsuario + "','" + perfilFBUsuario + "','" + perfilTWUsuario + "','" + perfilIGUsuario + "')";
-            comando.CommandType = CommandType.Text;
+            comando.CommandText = "InsertarUsuario";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@Username",NombreUsuario);
+            comando.Parameters.AddWithValue("@Password", Password);
+            comando.Parameters.AddWithValue("@Tipo", TipoUsuarioInt);
+            comando.Parameters.AddWithValue("@Nombre", nombreUsuario);
+            comando.Parameters.AddWithValue("@Apellido1", apellido1Usuario);
+            comando.Parameters.AddWithValue("@Apellido2", apellido2Usuario);
+            comando.Parameters.AddWithValue("@Provincia", provinciaUsuario);
+            comando.Parameters.AddWithValue("@Canton", cantonUsuario);
+            comando.Parameters.AddWithValue("@Distrito", distritoUsuario);
+            comando.Parameters.AddWithValue("@Direccion", direccionUsuario);
+            comando.Parameters.AddWithValue("@Telefono", telefonoUsuario);
+            comando.Parameters.AddWithValue("@Email", correoElectronicoUsuario);
+            comando.Parameters.AddWithValue("@SitioWeb", sitiowebUsuario);
+            comando.Parameters.AddWithValue("@Facebook", perfilFBUsuario);
+            comando.Parameters.AddWithValue("@Twitter", perfilTWUsuario);
+            comando.Parameters.AddWithValue("@IG", perfilIGUsuario);
+            
             comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+        }
+        public void EditarUsuario(int id, string NombreUsuario, string Password, bool TipoUsuario, string nombreUsuario, string apellido1Usuario, string apellido2Usuario, string provinciaUsuario, string cantonUsuario, string distritoUsuario, string direccionUsuario, string telefonoUsuario, string correoElectronicoUsuario, string sitiowebUsuario, string perfilFBUsuario, string perfilTWUsuario, string perfilIGUsuario)
+        {
+            int TipoUsuarioInt = 0;
+            comando.Connection = conexion.AbrirConexion();
+            comando.Parameters.Clear();
+            if (TipoUsuario == true)
+            {
+                TipoUsuarioInt = 1;
+            }
+            comando.CommandText = "UpdateUsuario";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@Id", id);
+            comando.Parameters.AddWithValue("@Username", NombreUsuario);
+            comando.Parameters.AddWithValue("@Password", Password);
+            comando.Parameters.AddWithValue("@Tipo", TipoUsuarioInt);
+            comando.Parameters.AddWithValue("@Nombre", nombreUsuario);
+            comando.Parameters.AddWithValue("@Apellido1", apellido1Usuario);
+            comando.Parameters.AddWithValue("@Apellido2", apellido2Usuario);
+            comando.Parameters.AddWithValue("@Provincia", provinciaUsuario);
+            comando.Parameters.AddWithValue("@Canton", cantonUsuario);
+            comando.Parameters.AddWithValue("@Distrito", distritoUsuario);
+            comando.Parameters.AddWithValue("@Direccion", direccionUsuario);
+            comando.Parameters.AddWithValue("@Telefono", telefonoUsuario);
+            comando.Parameters.AddWithValue("@Email", correoElectronicoUsuario);
+            comando.Parameters.AddWithValue("@SitioWeb", sitiowebUsuario);
+            comando.Parameters.AddWithValue("@Facebook", perfilFBUsuario);
+            comando.Parameters.AddWithValue("@Twitter", perfilTWUsuario);
+            comando.Parameters.AddWithValue("@IG", perfilIGUsuario);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
 
         }
+        public void EliminarUsuario(int ID)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EliminarUsuario";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@IDUsuarioEliminar", ID);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
 
 
+
+        }
 
 
     }

@@ -80,7 +80,8 @@ namespace Atidex
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewMovimientos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewMovimientos.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewMovimientos.Location = new System.Drawing.Point(8, 8);
+            this.dataGridViewMovimientos.Location = new System.Drawing.Point(7, 6);
+            this.dataGridViewMovimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewMovimientos.Name = "dataGridViewMovimientos";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -94,7 +95,7 @@ namespace Atidex
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewMovimientos.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewMovimientos.RowTemplate.Height = 29;
-            this.dataGridViewMovimientos.Size = new System.Drawing.Size(500, 500);
+            this.dataGridViewMovimientos.Size = new System.Drawing.Size(438, 375);
             this.dataGridViewMovimientos.TabIndex = 0;
             // 
             // Titulo
@@ -102,9 +103,9 @@ namespace Atidex
             this.Titulo.AutoSize = true;
             this.Titulo.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Titulo.ForeColor = System.Drawing.Color.Maroon;
-            this.Titulo.Location = new System.Drawing.Point(530, 46);
+            this.Titulo.Location = new System.Drawing.Point(464, 34);
             this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(382, 27);
+            this.Titulo.Size = new System.Drawing.Size(314, 23);
             this.Titulo.TabIndex = 1;
             this.Titulo.Text = "Ingrese los datos del movimiento";
             // 
@@ -113,18 +114,19 @@ namespace Atidex
             this.Nombre.AutoSize = true;
             this.Nombre.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Nombre.ForeColor = System.Drawing.Color.Maroon;
-            this.Nombre.Location = new System.Drawing.Point(561, 108);
+            this.Nombre.Location = new System.Drawing.Point(491, 81);
             this.Nombre.Name = "Nombre";
-            this.Nombre.Size = new System.Drawing.Size(103, 27);
+            this.Nombre.Size = new System.Drawing.Size(85, 23);
             this.Nombre.TabIndex = 3;
             this.Nombre.Text = "Nombre";
             // 
             // txtNombreMovimiento
             // 
-            this.txtNombreMovimiento.Location = new System.Drawing.Point(730, 106);
+            this.txtNombreMovimiento.Location = new System.Drawing.Point(639, 80);
+            this.txtNombreMovimiento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreMovimiento.Name = "txtNombreMovimiento";
             this.txtNombreMovimiento.ShortcutsEnabled = false;
-            this.txtNombreMovimiento.Size = new System.Drawing.Size(175, 27);
+            this.txtNombreMovimiento.Size = new System.Drawing.Size(154, 23);
             this.txtNombreMovimiento.TabIndex = 4;
             // 
             // Descripcion
@@ -132,46 +134,50 @@ namespace Atidex
             this.Descripcion.AutoSize = true;
             this.Descripcion.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Descripcion.ForeColor = System.Drawing.Color.Maroon;
-            this.Descripcion.Location = new System.Drawing.Point(561, 150);
+            this.Descripcion.Location = new System.Drawing.Point(491, 112);
             this.Descripcion.Name = "Descripcion";
-            this.Descripcion.Size = new System.Drawing.Size(146, 27);
+            this.Descripcion.Size = new System.Drawing.Size(119, 23);
             this.Descripcion.TabIndex = 5;
             this.Descripcion.Text = "Descripción";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(730, 151);
+            this.txtDescripcion.Location = new System.Drawing.Point(639, 113);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(175, 27);
+            this.txtDescripcion.Size = new System.Drawing.Size(154, 23);
             this.txtDescripcion.TabIndex = 6;
             // 
             // Tipo
             // 
             this.Tipo.AutoSize = true;
-            this.Tipo.BackColor = System.Drawing.Color.Gainsboro;
+            this.Tipo.BackColor = System.Drawing.SystemColors.Control;
             this.Tipo.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Tipo.ForeColor = System.Drawing.Color.Maroon;
-            this.Tipo.Location = new System.Drawing.Point(561, 194);
+            this.Tipo.Location = new System.Drawing.Point(491, 146);
             this.Tipo.Name = "Tipo";
-            this.Tipo.Size = new System.Drawing.Size(104, 27);
+            this.Tipo.Size = new System.Drawing.Size(85, 23);
             this.Tipo.TabIndex = 7;
             this.Tipo.Text = "Tipo (ID)";
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(730, 194);
+            this.txtTipo.Location = new System.Drawing.Point(639, 146);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(175, 27);
+            this.txtTipo.Size = new System.Drawing.Size(154, 23);
             this.txtTipo.TabIndex = 8;
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.Maroon;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(561, 264);
+            this.btnGuardar.Location = new System.Drawing.Point(491, 198);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(345, 50);
+            this.btnGuardar.Size = new System.Drawing.Size(302, 38);
             this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -180,11 +186,13 @@ namespace Atidex
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.Maroon;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnModificar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnModificar.Location = new System.Drawing.Point(20, 520);
+            this.btnModificar.Location = new System.Drawing.Point(18, 390);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(200, 50);
+            this.btnModificar.Size = new System.Drawing.Size(175, 38);
             this.btnModificar.TabIndex = 0;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -193,11 +201,13 @@ namespace Atidex
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Maroon;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(250, 520);
+            this.btnEliminar.Location = new System.Drawing.Point(219, 390);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(200, 50);
+            this.btnEliminar.Size = new System.Drawing.Size(175, 38);
             this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -205,10 +215,10 @@ namespace Atidex
             // 
             // FormAdminMovimientos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
@@ -220,7 +230,6 @@ namespace Atidex
             this.Controls.Add(this.dataGridViewMovimientos);
             this.Controls.Add(this.Nombre);
             this.Controls.Add(this.Titulo);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormAdminMovimientos";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);

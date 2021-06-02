@@ -1,0 +1,12 @@
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeNegocio.deps.json
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeNegocio.dll
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeNegocio.pdb
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeDatos.dll
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeDatos.pdb
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.csprojAssemblyReference.cache
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.AssemblyInfoInputs.cache
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.AssemblyInfo.cs
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.csproj.CopyComplete
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.dll
+C:\Users\Marcelo\Desktop\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.pdb

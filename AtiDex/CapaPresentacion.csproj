@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CapaDeNegocio\CapaDeNegocio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="INTERFAZ ADMINISTRADOR\InterfazDelAdmin.cs">
       <SubType>Form</SubType>
     </Compile>

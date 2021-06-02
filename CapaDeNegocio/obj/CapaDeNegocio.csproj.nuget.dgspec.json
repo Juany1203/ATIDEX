@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj": {}
+    "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj": {
+    "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj",
-        "projectName": "CapaDeNegocio",
-        "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj",
-        "packagesPath": "C:\\Users\\juany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\obj\\",
+        "projectUniqueName": "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
+        "projectName": "CapaDeDatos",
+        "projectPath": "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
+        "packagesPath": "C:\\Users\\Marcelo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeDatos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\juany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +44,84 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj",
+        "projectName": "CapaDeNegocio",
+        "projectPath": "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj",
+        "packagesPath": "C:\\Users\\Marcelo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeNegocio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Marcelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
+                "projectPath": "C:\\Users\\Marcelo\\Desktop\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -6,7 +6,6 @@ Elaborado por:
 - Juan Andrés Fernández Camacho
 - Marcelo Fernández Solano
 - Steven Vega Zúñiga 
-
 */
 
 create database AtiDex
@@ -33,7 +32,7 @@ create table Usuario
 (
 UsuarioID int IDENTITY(0,1) PRIMARY KEY not null,
 UserNameUsuario VARCHAR (10) UNIQUE not null,
-contrasenaUsuario VARCHAR (10) not null,
+password VARCHAR (10) not null,
 TipoUsuario bit not null, -- Esto indica si el ususario es admin o entrenador, 1 si es admin 0 si es entrenador
 nombreUsuario VARCHAR (10) not null,
 apellido1Usuario VARCHAR (10) not null,
@@ -80,8 +79,8 @@ TipoNombre Varchar(15) UNIQUE not null,
 create table Movimientos
 (
 MovimientoID int IDENTITY(0,1) PRIMARY KEY not null,
-nombreMovimiento varchar(15) not null,
-descripcionMovimiento varchar(15) not null,
+nombreMovimiento varchar(150) not null,
+descripcionMovimiento varchar(150) not null,
 TipoID int foreign key (TipoID) references Tipo(TipoID),
 )
 
@@ -110,5 +109,4 @@ ID_Bitacora int IDENTITY (0, 1) PRIMARY KEY not null,
 fecha date,
 UserIDBitacora int foreign key (UserIDBitacora) references Usuario (UsuarioID),
 )
-
 

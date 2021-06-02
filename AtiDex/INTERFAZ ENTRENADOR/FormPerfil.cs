@@ -24,8 +24,6 @@ namespace Atidex
         {
             Papa = interfazDelEntrenador;
             InitializeComponent();
-            
-
         }
         
 

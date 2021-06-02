@@ -5,6 +5,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>AtiDex</ActiveDebugProfile>
+    <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="INTERFAZ ADMINISTRADOR\FormAdminPokemon.cs">
@@ -44,6 +45,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="INTERFAZ VISITANTE\FormVisitanteMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LOGIN\FormLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LOGIN\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

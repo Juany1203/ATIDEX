@@ -47,6 +47,9 @@
     <Compile Update="INTERFAZ VISITANTE\FormVisitanteMovimientos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LOGIN\FormLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LOGIN\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>

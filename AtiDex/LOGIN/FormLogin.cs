@@ -50,18 +50,22 @@ namespace Atidex
                     {
                         if (UserLoginCache.TipoUsuario == true)
                         {
+                            this.Hide();
+                            FormLoading formLoading = new FormLoading();
+                            formLoading.ShowDialog();
                             InterfazDelAdmin mainMenu = new InterfazDelAdmin();
                             mainMenu.Show();
                             mainMenu.FormClosed += Logout;
-                            this.Hide();
-
+                            
                         }
                         else
                         {
+                            this.Hide();
+                            FormLoading formLoading = new FormLoading();
+                            formLoading.ShowDialog();
                             InterfazDelEntrenador mainMenu = new InterfazDelEntrenador();
                             mainMenu.Show();
                             mainMenu.FormClosed += Logout;
-                            this.Hide();
 
                         }
                     }
@@ -100,10 +104,12 @@ namespace Atidex
 
         private void linkVISITANTE_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
+            FormLoading formLoading = new FormLoading();
+            formLoading.ShowDialog();
             InterfazDelVisitante mainMenu = new InterfazDelVisitante();
             mainMenu.Show();
             mainMenu.FormClosed += Logout;
-            this.Hide();
         }
 
         private void linkRegistrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

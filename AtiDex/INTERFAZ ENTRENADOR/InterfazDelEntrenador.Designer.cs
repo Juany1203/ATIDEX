@@ -94,7 +94,7 @@ namespace Atidex
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.iconButton4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Dragon;
             this.iconButton4.IconColor = System.Drawing.Color.White;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -103,7 +103,7 @@ namespace Atidex
             this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton4.Size = new System.Drawing.Size(220, 60);
             this.iconButton4.TabIndex = 5;
-            this.iconButton4.Text = "Consulta de pokémon";
+            this.iconButton4.Text = "Mis Pokemon";
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = true;
@@ -147,7 +147,7 @@ namespace Atidex
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton2.Size = new System.Drawing.Size(220, 60);
             this.iconButton2.TabIndex = 3;
-            this.iconButton2.Text = "Gestor de pokémon";
+            this.iconButton2.Text = "Agregar un pokemon";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;

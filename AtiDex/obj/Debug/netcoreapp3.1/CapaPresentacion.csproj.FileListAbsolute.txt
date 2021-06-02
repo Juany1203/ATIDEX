@@ -44,3 +44,4 @@ C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debu
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaComun.pdb
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormPerfil.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormRegistro.resources
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormLoading.resources

@@ -49,5 +49,10 @@ namespace Atidex
             CN_Usuario Usuario = new CN_Usuario();
             dataGridView1.DataSource = Usuario.MostrarBitacora();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

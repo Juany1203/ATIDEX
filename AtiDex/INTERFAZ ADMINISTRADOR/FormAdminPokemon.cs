@@ -1,5 +1,4 @@
-﻿using CapaDeNegocio;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,12 +17,7 @@ namespace Atidex
 
         private void FormAdminPokemon_Load(object sender, EventArgs e)
         {
-            MostrarPokemon();
-        }
-        private void MostrarPokemon()
-        {
-            CdN_Pokemon objeto = new CdN_Pokemon();
-            //DataGridView.DataSource = objeto.MostrarProd();
+
         }
     }
 }

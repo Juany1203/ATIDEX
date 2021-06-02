@@ -20,5 +20,19 @@ namespace CapaDeNegocio
             tabla = objetoCD.Mostrar();
             return tabla;
         }
+        public void InsertarTipo (string TipoNombre)
+        {
+            objetoCD.Insertar(TipoNombre);
+    }
+        public void EditarTipo(string TipoNombre, string TipoID)
+        {
+            objetoCD.EditarTipo(TipoNombre, Convert.ToInt32(TipoID));
+               
+        }
+        public void EliminarTipo(string TipoID)
+        {
+            objetoCD.EliminarTipo(Convert.ToInt32(TipoID));
+        }
+
     }
 }

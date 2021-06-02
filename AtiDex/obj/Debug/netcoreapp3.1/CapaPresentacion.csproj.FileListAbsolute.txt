@@ -40,7 +40,6 @@ C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\FontAweso
 C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\CapaPresentacion.csproj.AssemblyReference.cache
 C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormAdminMovimientos.resources
 C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormAdminPokemon.resources
-C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormAdminTipos.resources
 C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormAdminUsuarios.resources
 C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.InterfazDelAdmin.resources
 C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormBitacora.resources
@@ -72,3 +71,4 @@ C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaDeDat
 C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaDeNegocio.dll
 C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaDeNegocio.pdb
 C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\bin\Debug\netcoreapp3.1\CapaDeDatos.pdb
+C:\Users\Juanca\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.btnEditar.resources

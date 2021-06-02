@@ -26,7 +26,33 @@ namespace CapaDeDatos
         public void Insertar(string TipoNombre)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "";
+            comando.CommandText = "InsertarTipo";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@NombreTipo", TipoNombre);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+
+        }
+        public void EditarTipo(string TipoNombre, int TipoID)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EditarTipo";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@NombreTipo", TipoNombre );
+            comando.Parameters.AddWithValue("@IdTipo", TipoID);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+        }
+        public void EliminarTipo(int TipoID)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EliminarTipo";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@IdTipo", TipoID);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+
         }
     }
 }
+ 

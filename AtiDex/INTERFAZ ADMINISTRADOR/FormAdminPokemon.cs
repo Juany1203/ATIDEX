@@ -44,7 +44,8 @@ namespace Atidex
             {
                 try
                 {
-                    PokemonCN.InsertarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, pictureBoxPokemon.Image);
+                    IDPokemon = dataGridView1.CurrentRow.Cells["PokemonID"].Value.ToString();
+                    PokemonCN.EditarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, pictureBoxPokemon.Image, IDPokemon);
                     MessageBox.Show("El dato se modificó correctamente");
                     MostrarPokemon();
                     limpiarForm();

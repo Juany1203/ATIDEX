@@ -29,3 +29,8 @@ create proc EliminarPokemon
 as
 delete from Pokemon where PokemonID = @PokemonIDEliminar
 go
+
+Create proc MostrarPokemon
+as
+select *from Pokemon
+go

@@ -21,15 +21,16 @@ namespace CapaDeNegocio
         }
         public void InsertarPokemon(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, Image imagenPokemon)
         {
-            objetoCD.Insertar(nombrePokemon, generacionPokemon, legendarioPokemon, imagenPokemon);
+            objetoCD.InsertarPokemon(nombrePokemon, generacionPokemon, legendarioPokemon, imagenPokemon);
         }
         public void EditarPokemon(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, Image imagenPokemon, string id)
         {
-            objetoCD.Editar(nombrePokemon, generacionPokemon, legendarioPokemon, imagenPokemon, Convert.ToInt32(id));
+            objetoCD.EditarPokemon(nombrePokemon, generacionPokemon, legendarioPokemon, imagenPokemon, Convert.ToInt32(id));
         }
+
         public void EliminarPokemon(string id)
         {
-            objetoCD.Eliminar(Convert.ToInt32(id));
+            objetoCD.EliminarPokemon(Convert.ToInt32(id));
         }
     }
 }

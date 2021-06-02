@@ -29,7 +29,7 @@ namespace CapaDeDatos
             return tabla;
 
         }
-        public void Insertar(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, Image imagenPokemon)
+        public void InsertarPokemon(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, Image imagenPokemon)
         {
             int Legendario = 0;
 
@@ -48,7 +48,7 @@ namespace CapaDeDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-        public void Editar(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, Image imagenPokemon, int id)
+        public void EditarPokemon(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, Image imagenPokemon, int id)
         {
             int Legendario = 0;
 
@@ -69,7 +69,7 @@ namespace CapaDeDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-        public void Eliminar(int id)
+        public void EliminarPokemon(int id)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "EliminarPokemon";

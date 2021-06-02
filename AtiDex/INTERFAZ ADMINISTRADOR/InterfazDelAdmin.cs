@@ -108,7 +108,7 @@ namespace Atidex
         private void iconButton1_Click_1(object sender, EventArgs e)
         {
             ActiveButton(sender, Color.FromArgb(200, 120, 0));
-            OpenChildForm(new FormMovimientos());
+            OpenChildForm(new FormAdminMovimientos());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)

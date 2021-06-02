@@ -83,6 +83,7 @@ namespace Atidex
 
 
         }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -101,9 +102,10 @@ namespace Atidex
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, Color.FromArgb(200, 120, 0));
-            OpenChildForm (new FormPerfil());
+            OpenChildForm (new FormPerfil(this));
 
         }
+
 
         private void iconButton1_Click_1(object sender, EventArgs e)
         {

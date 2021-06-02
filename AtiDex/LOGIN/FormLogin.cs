@@ -37,8 +37,20 @@ namespace Atidex
         {
             TextBoxPASS.UseSystemPasswordChar = true;
         }
+        InterfazDelAdmin AdminMenu;
+        InterfazDelEntrenador TrainerMenu;
 
-        private void BotonACCEDER_Click(object sender, EventArgs e)
+        
+        public void CerrarAdmin ()
+        {
+            AdminMenu.Close();
+
+        }
+        public void CerrarEntrenador()
+        {
+            TrainerMenu.Close();
+        }
+        public void BotonACCEDER_Click(object sender, EventArgs e)
         {
             if (TextboxUSER.Text != "")
             {
@@ -50,12 +62,13 @@ namespace Atidex
                     {
                         if (UserLoginCache.TipoUsuario == true)
                         {
+
                             this.Hide();
                             FormLoading formLoading = new FormLoading();
                             formLoading.ShowDialog();
-                            InterfazDelAdmin mainMenu = new InterfazDelAdmin();
-                            mainMenu.Show();
-                            mainMenu.FormClosed += Logout;
+                            AdminMenu = new InterfazDelAdmin();
+                            AdminMenu.Show();
+                            AdminMenu.FormClosed += Logout;
                             
                         }
                         else
@@ -63,9 +76,9 @@ namespace Atidex
                             this.Hide();
                             FormLoading formLoading = new FormLoading();
                             formLoading.ShowDialog();
-                            InterfazDelEntrenador mainMenu = new InterfazDelEntrenador();
-                            mainMenu.Show();
-                            mainMenu.FormClosed += Logout;
+                            TrainerMenu = new InterfazDelEntrenador();
+                            TrainerMenu.Show();
+                            TrainerMenu.FormClosed += Logout;
 
                         }
                     }

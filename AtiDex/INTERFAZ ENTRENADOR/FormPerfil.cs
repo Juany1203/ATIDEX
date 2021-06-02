@@ -17,15 +17,18 @@ namespace Atidex
         
         CN_Usuario UsuarioCN = new CN_Usuario();
         private string idUsuario = Convert.ToString(UserLoginCache.IdUser);
-        InterfazDelEntrenador interfazE = new InterfazDelEntrenador();
+        InterfazDelEntrenador Papa;
 
 
-        public FormPerfil()
+        public FormPerfil(InterfazDelEntrenador interfazDelEntrenador)
         {
+            Papa = interfazDelEntrenador;
             InitializeComponent();
             
 
         }
+        
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -69,7 +72,7 @@ namespace Atidex
                 if (MessageBox.Show("¿Desea modificar el perfil? \n se cerrará la sesión.", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     UsuarioCN.ModificarUsuario(idUsuario, UserTextBox.Text, PassTextBox.Text, false, NombreTextBox.Text, Apellido1TextBox.Text, Apellido2TextBox.Text, ProvinciaTextBox.Text, CantonTextBox.Text, DistritoTextBox.Text, DireccionTextBox.Text, TelefonoTextBox.Text, EmailtextBox.Text, SitioWebTextBox.Text, FacebookTextBox.Text, TwiterTextBox.Text, InstagramTextBox.Text);
-                    interfazE.Close();
+                    Papa.Close();
                 }
             }
             catch (Exception ex)
@@ -77,6 +80,7 @@ namespace Atidex
                 MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
             }
         }
+
         private void Logout(object sender, FormClosedEventArgs e)
         {
             this.Show();
@@ -94,10 +98,10 @@ namespace Atidex
             try
             {
 
-                if (MessageBox.Show("¿Desea modificar el perfil? \n se cerrará la sesión.", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show("¿Desea Eliminar el perfil? \n Este Cambio no puede ser revertido.", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     UsuarioCN.EliminarUser(idUsuario);
-                    this.Close();
+                    Papa.Close();
                 }
             }
             catch (Exception ex)

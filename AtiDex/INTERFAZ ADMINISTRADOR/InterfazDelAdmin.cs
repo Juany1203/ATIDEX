@@ -120,7 +120,7 @@ namespace Atidex
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, Color.FromArgb(200, 120, 0));
-            OpenChildForm(new FormAdminTipos());
+            OpenChildForm(new btnEditar());
         }
 
         private void iconButton4_Click(object sender, EventArgs e)

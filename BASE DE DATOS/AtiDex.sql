@@ -73,7 +73,7 @@ create table Tipo
 TipoID int IDENTITY(0,1) PRIMARY KEY not null,  
 TipoNombre Varchar(50) UNIQUE not null,
 )
-
+ 
 -- Movimientos para asignar
 
 
@@ -115,4 +115,24 @@ UserIDBitacora int foreign key (UserIDBitacora) references Usuario (UsuarioID),
 )
 drop table Bitacora
 
+--TABLAS 
 
+insert into Tipo
+values 
+('Bicho'),
+('Dragón'),
+('Eléctrico'),
+('Hada'),
+('Lucha'),
+('Fuego'),
+('Volador'),
+('Fantasma'),
+('Planta'),
+('Tierra'),
+('Hielo'),
+('Normal'),
+('Veneno'),
+('Psíquico'),
+('Roca'),
+('Acero'),
+('Agua');

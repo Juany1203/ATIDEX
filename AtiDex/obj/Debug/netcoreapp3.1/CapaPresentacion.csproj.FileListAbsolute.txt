@@ -23,7 +23,6 @@ C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debu
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\CapaPresentacion.genruntimeconfig.cache
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormAdminPokemon.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormAdminMovimientos.resources
-C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormAdminTipos.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormAdminUsuarios.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormVisitanteEntrenadores.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormVisitanteMovimientos.resources
@@ -45,3 +44,4 @@ C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\bin\Debu
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormPerfil.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormRegistro.resources
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.FormLoading.resources
+C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\Atidex\obj\Debug\netcoreapp3.1\Atidex.btnEditar.resources

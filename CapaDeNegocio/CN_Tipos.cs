@@ -1,4 +1,16 @@
-﻿using System;
+﻿/* 
+Proyecto: ATIDEX
+Capa de Negocio para los tipos de pokemones
+
+Elaborado por:
+- Juan Carlos Álvarez Vieto
+- Juan Andrés Fernández Camacho
+- Marcelo Fernández Solano
+- Steven Vega Zúñiga 
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
@@ -20,16 +32,16 @@ namespace CapaDeNegocio
             tabla = objetoCD.Mostrar();
             return tabla;
         }
-        public void InsertarTipo (string TipoNombre)
+        public void InsertarTipo (string TipoNombre) // Manipula datos de insertar. Solo recibe Strings (Proviene del usuario)
         {
             objetoCD.Insertar(TipoNombre);
     }
-        public void EditarTipo(string TipoNombre, string TipoID)
+        public void EditarTipo(string TipoNombre, string TipoID) // Manipula datos de editar. Solo recibe Strings (Proviene del usuario)
         {
             objetoCD.EditarTipo(TipoNombre, Convert.ToInt32(TipoID));
                
         }
-        public void EliminarTipo(string TipoID)
+        public void EliminarTipo(string TipoID) // Manipula datos de eliminar. Recibe el ID en forma de string
         {
             objetoCD.EliminarTipo(Convert.ToInt32(TipoID));
         }

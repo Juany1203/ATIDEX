@@ -46,7 +46,7 @@ namespace Atidex
                     MostrarPokemon();
                     limpiarForm();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("No se pudo insertar, verifique si insertó todos los datos necesarios");
 

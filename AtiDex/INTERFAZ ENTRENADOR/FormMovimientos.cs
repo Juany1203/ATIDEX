@@ -27,18 +27,6 @@ namespace Atidex
             MostrarDatos(); // Invoca al metodo MostrarMovimientos
         }
 
-
-        private void dataGridViewMovimientos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-        }
-
-        private void dataGridViewPokemones_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void MostrarDatos()
         {
             CdN_Pokemon TrainerPokemon = new CdN_Pokemon();
@@ -49,14 +37,9 @@ namespace Atidex
             dataGridViewMovimientosPokemon.DataSource = TrainerPokemonMov.MostrarTrainerPokemonMov();
         }
 
-        private void dataGridViewMovimientosPokemon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e) // Evento al clickear botón Guardar
         {
-
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            if (EditarUsuario == false)
+            if (EditarUsuario == false) // En caso de agregar un nuevo elemento
             {
                 try
                 {
@@ -65,13 +48,13 @@ namespace Atidex
                     MostrarDatos();
                     Limpiarform();
                 }
-                catch (Exception ex)
+                catch (Exception )
                 {
-                    MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
+                    MessageBox.Show("No se pudo insertar, por favor intente de nuevo");
 
                 }
             }
-            if (EditarUsuario == true)
+            if (EditarUsuario == true) // En caso de modificar un elemento existente 
             {
                 try
                 {
@@ -82,25 +65,20 @@ namespace Atidex
                     EditarUsuario = false;
 
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
+                    MessageBox.Show("No se pudo insertar, por favor intente de nuevo");
 
                 }
             }
         }
-        private void BtnModificar_Click(object sender, EventArgs e)
-        {
-
-
-        }
-        private void Limpiarform()
+        private void Limpiarform() // Funcion para limpiar las cajas de texto despues de una transacción
         {
             textBoxMovimientosID.Clear();
             textBoxPokemonID.Clear();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) // Evento al clickear botón Eliminar
         {
             if (dataGridViewMovimientosPokemon.SelectedRows.Count > 0)
             {
@@ -114,11 +92,9 @@ namespace Atidex
             }
             else
                 MessageBox.Show("Seleccione una fila por favor");
-
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // Evento al clickear botón Modificar
         {
 
             if (dataGridViewMovimientosPokemon.SelectedRows.Count > 0)

@@ -1,4 +1,16 @@
-﻿using System;
+﻿/* 
+Proyecto: ATIDEX
+Capa de datos para los pokemones
+
+Elaborado por:
+- Juan Carlos Álvarez Vieto
+- Juan Andrés Fernández Camacho
+- Marcelo Fernández Solano
+- Steven Vega Zúñiga 
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,7 +31,7 @@ namespace CapaDeDatos
         SqlCommand comando = new SqlCommand();
         private int IDEntrenador = UserLoginCache.IdUser;
 
-        public DataTable Mostrar()
+        public DataTable Mostrar() // Metodo de lectura de los pokemones de las tablas en sql 
         {
             comando.Parameters.Clear();
             comando.Connection = conexion.AbrirConexion();
@@ -33,7 +45,7 @@ namespace CapaDeDatos
             return tabla;
 
         }
-        public void InsertarPokemon(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, byte[] imagenPokemon)
+        public void InsertarPokemon(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, byte[] imagenPokemon) // Funcion para insertar un nuevo pokemon
         {
             int Legendario = 0;
 
@@ -61,7 +73,7 @@ namespace CapaDeDatos
 
             conexion.CerrarConexion();
         }
-        public void EditarPokemon(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, byte[] imagenPokemon, int id)
+        public void EditarPokemon(string nombrePokemon, string generacionPokemon, bool legendarioPokemon, byte[] imagenPokemon, int id) // Funcion para modificar un pokemon existente
         {
             int Legendario = 0;
 
@@ -82,7 +94,7 @@ namespace CapaDeDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-        public void EliminarPokemon(int id)
+        public void EliminarPokemon(int id) // Funcion para eliminar un movimiento existente
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "EliminarPokemon";
@@ -95,7 +107,7 @@ namespace CapaDeDatos
 
 
         //Funciones para trainer pokemon
-        public DataTable MostrarTrainerPokemon()
+        public DataTable MostrarTrainerPokemon() // Método de lectura de  pokemones pertenecientes a entrenadores
         {
 
             comando.Connection = conexion.AbrirConexion();
@@ -110,7 +122,7 @@ namespace CapaDeDatos
             return tabla;
 
         }
-        public void InsertarTrainerPokemon( int PokemonID, string NickName, string salud, string ataque, string defensa, string atkspecial, string defspecial, string velocidad, bool Estado)
+        public void InsertarTrainerPokemon( int PokemonID, string NickName, string salud, string ataque, string defensa, string atkspecial, string defspecial, string velocidad, bool Estado) // Funcion para insertar un nuevo pokemon de un entrenador
         {
             int EstadoP = 0;
 
@@ -141,6 +153,8 @@ namespace CapaDeDatos
 
             conexion.CerrarConexion();
         }
+
+        // Funcion para editar un pokemon de un entrenador
         public void EditarTrainerPokemon(int IDTrainerPokemon, int PokemonID, string NickName, string salud, string ataque, string defensa, string atkspecial, string defspecial, string velocidad, bool Estado)
         {
             int EstadoP = 0;
@@ -167,7 +181,7 @@ namespace CapaDeDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-        public void EliminarTrainerPokemon(int TrainerPokemonid)
+        public void EliminarTrainerPokemon(int TrainerPokemonid) // Funcion para eliminar un pokemon de un entrenador
         {
             comando.Parameters.Clear();
             comando.Connection = conexion.AbrirConexion();

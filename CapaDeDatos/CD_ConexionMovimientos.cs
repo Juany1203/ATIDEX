@@ -1,5 +1,6 @@
 ﻿/* 
 Proyecto: ATIDEX
+Conexion capa de datos con SQL para gestion tipos de pokemones
 
 Elaborado por:
 - Juan Carlos Álvarez Vieto

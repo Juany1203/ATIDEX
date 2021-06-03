@@ -1,4 +1,16 @@
-﻿using System;
+﻿/* 
+Proyecto: ATIDEX
+Conexion capa de datos con SQL para gestion tipos de pokemones
+
+Elaborado por:
+- Juan Carlos Álvarez Vieto
+- Juan Andrés Fernández Camacho
+- Marcelo Fernández Solano
+- Steven Vega Zúñiga 
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data.SqlClient;
@@ -74,7 +86,7 @@ namespace CapaDeDatos
         SqlCommand comando = new SqlCommand();
         
 
-        public DataTable Mostrar()
+        public DataTable Mostrar() // Metodo de lectura de los usuarios de las tablas en sql 
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "Select *from Usuario";
@@ -84,6 +96,7 @@ namespace CapaDeDatos
             return tabla;
         }
 
+        // Funcion para insertar un nuevo usuario
         public void InsertarUsuarioCD (string NombreUsuario, string Password,bool TipoUsuario,string nombreUsuario, string apellido1Usuario, string apellido2Usuario, string provinciaUsuario, string cantonUsuario, string distritoUsuario, string direccionUsuario, string telefonoUsuario, string correoElectronicoUsuario, string sitiowebUsuario, string perfilFBUsuario, string perfilTWUsuario, string perfilIGUsuario)
         {
             int TipoUsuarioInt = 0;
@@ -114,6 +127,7 @@ namespace CapaDeDatos
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
         }
+        // Funcion para modificar un usuario existente
         public void EditarUsuario(int id, string NombreUsuario, string Password, bool TipoUsuario, string nombreUsuario, string apellido1Usuario, string apellido2Usuario, string provinciaUsuario, string cantonUsuario, string distritoUsuario, string direccionUsuario, string telefonoUsuario, string correoElectronicoUsuario, string sitiowebUsuario, string perfilFBUsuario, string perfilTWUsuario, string perfilIGUsuario)
         {
             int TipoUsuarioInt = 0;

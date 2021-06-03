@@ -63,9 +63,9 @@ namespace Atidex
                     limpiarformMovimientos();
                     editarMovimiento = false; // Reestablece el valor de editarMovimiento para seguir peritiendo el ingreso de valores nuevos
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show("Los datos no se editaron exitosamente por el sigiente motivo: " + ex); //Explica el motivo por el cual no se pudo guardar
+                    MessageBox.Show("Los datos no se editaron exitosamente, por favor intente de nuevo "); //Explica el motivo por el cual no se pudo guardar
                 }
             }
 
@@ -102,11 +102,6 @@ namespace Atidex
             txtNombreMovimiento.Clear();
             txtDescripcion.Clear();
             txtTipo.Clear();
-        }
-
-        private void dataGridViewMovimientos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

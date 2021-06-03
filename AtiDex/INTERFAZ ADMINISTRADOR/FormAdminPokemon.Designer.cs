@@ -1,4 +1,13 @@
-﻿
+﻿/* 
+Proyecto: ATIDEX
+Capa de Presentacion
+
+Elaborado por:
+- Juan Carlos Álvarez Vieto
+- Juan Andrés Fernández Camacho
+- Marcelo Fernández Solano
+- Steven Vega Zúñiga 
+*/
 namespace Atidex
 {
     partial class FormAdminPokemon
@@ -250,7 +259,7 @@ namespace Atidex
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        //private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxGeneracion;

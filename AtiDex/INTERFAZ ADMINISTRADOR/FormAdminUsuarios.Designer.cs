@@ -1,4 +1,13 @@
-﻿
+﻿/* 
+Proyecto: ATIDEX
+Capa de Presentacion
+
+Elaborado por:
+- Juan Carlos Álvarez Vieto
+- Juan Andrés Fernández Camacho
+- Marcelo Fernández Solano
+- Steven Vega Zúñiga 
+*/
 namespace Atidex
 {
     partial class FormAdminUsuarios
@@ -533,7 +542,7 @@ namespace Atidex
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.TextBox textBoxCanton;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
+        //private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnEliminar;
     }

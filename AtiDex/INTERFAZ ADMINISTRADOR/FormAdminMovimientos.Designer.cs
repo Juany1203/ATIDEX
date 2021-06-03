@@ -97,7 +97,6 @@ namespace Atidex
             this.dataGridViewMovimientos.RowTemplate.Height = 29;
             this.dataGridViewMovimientos.Size = new System.Drawing.Size(438, 375);
             this.dataGridViewMovimientos.TabIndex = 0;
-            this.dataGridViewMovimientos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMovimientos_CellContentClick);
             // 
             // Titulo
             // 

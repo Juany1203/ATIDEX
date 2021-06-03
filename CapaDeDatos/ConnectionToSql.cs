@@ -1,4 +1,15 @@
-﻿using System.Collections.Generic;
+﻿/* 
+Proyecto: ATIDEX
+Conexion capa de datos con SQL
+Elaborado por:
+- Juan Carlos Álvarez Vieto
+- Juan Andrés Fernández Camacho
+- Marcelo Fernández Solano
+- Steven Vega Zúñiga 
+*/
+
+
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;

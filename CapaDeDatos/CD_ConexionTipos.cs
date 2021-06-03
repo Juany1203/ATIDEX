@@ -1,4 +1,16 @@
-﻿using System;
+﻿/* 
+Proyecto: ATIDEX
+Conexion capa de datos con SQL para gestion tipos de pokemones
+
+Elaborado por:
+- Juan Carlos Álvarez Vieto
+- Juan Andrés Fernández Camacho
+- Marcelo Fernández Solano
+- Steven Vega Zúñiga 
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;

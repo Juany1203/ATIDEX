@@ -100,7 +100,6 @@ namespace Atidex
             this.dataGridViewMovimientos.RowTemplate.Height = 25;
             this.dataGridViewMovimientos.Size = new System.Drawing.Size(382, 179);
             this.dataGridViewMovimientos.TabIndex = 0;
-            this.dataGridViewMovimientos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMovimientos_CellContentClick);
             // 
             // dataGridViewPokemones
             // 
@@ -138,7 +137,6 @@ namespace Atidex
             this.dataGridViewPokemones.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewPokemones.Size = new System.Drawing.Size(384, 203);
             this.dataGridViewPokemones.TabIndex = 1;
-            this.dataGridViewPokemones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPokemones_CellContentClick);
             // 
             // label1
             // 
@@ -299,7 +297,6 @@ namespace Atidex
             this.dataGridViewMovimientosPokemon.RowTemplate.Height = 25;
             this.dataGridViewMovimientosPokemon.Size = new System.Drawing.Size(261, 179);
             this.dataGridViewMovimientosPokemon.TabIndex = 13;
-            this.dataGridViewMovimientosPokemon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMovimientosPokemon_CellContentClick);
             // 
             // FormMovimientos
             // 

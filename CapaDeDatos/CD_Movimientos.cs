@@ -62,7 +62,7 @@ namespace CapaDeDatos
             comando.Parameters.Clear();
         }
 
-        public void EliminarMovimientos(int MovimientoID)
+        public void EliminarMovimientos(int MovimientoID) // Funcion para eliminar un movimiento existente
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "EliminarMovimientos";

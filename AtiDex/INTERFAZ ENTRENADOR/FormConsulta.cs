@@ -90,7 +90,7 @@ namespace Atidex
 
 
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("No se puede eliminar un pokemon con movimientos asignados");
 

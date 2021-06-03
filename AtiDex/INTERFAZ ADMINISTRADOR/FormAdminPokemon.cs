@@ -30,16 +30,25 @@ namespace Atidex
             {
                 try
                 {
-                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
-                    pictureBoxPokemon.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    if (pictureBoxPokemon.Image == null)
+                    {
+                        MessageBox.Show("Ingrese Por favor Una imagen");
+                    }
 
-                    PokemonCN.InsertarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, ms.GetBuffer());
+                    else 
+                    {
+                        System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                        pictureBoxPokemon.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                        PokemonCN.InsertarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, ms.GetBuffer());
+
+                    }
+
                     MostrarPokemon();
                     limpiarForm();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
+                    MessageBox.Show("No se pudo insertar, verifique si insertó todos los datos necesarios");
 
                 }
             }
@@ -108,10 +117,10 @@ namespace Atidex
                 textBoxGeneracion.Text = TablaPokemon.CurrentRow.Cells["GeneracionPokemon"].Value.ToString();
 
                 //con esto obtengo la imagen 
-                System.IO.MemoryStream ms = new System.IO.MemoryStream();
-                Bitmap img = (Bitmap)TablaPokemon.CurrentRow.Cells[4].Value;
-                img.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                pictureBoxPokemon.Image =  Image.FromStream(ms);
+                //System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                //Bitmap img = (Bitmap)TablaPokemon.CurrentRow.Cells[4].Value;
+                //img.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                //pictureBoxPokemon.Image =  Image.FromStream(ms);
 
             }
 

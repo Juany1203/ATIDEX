@@ -30,7 +30,10 @@ namespace Atidex
             {
                 try
                 {
-                    PokemonCN.InsertarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, pictureBoxPokemon.Image);
+                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                    pictureBoxPokemon.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+
+                    PokemonCN.InsertarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, ms.GetBuffer());
                     MostrarPokemon();
                     limpiarForm();
                 }
@@ -44,8 +47,11 @@ namespace Atidex
             {
                 try
                 {
-                    IDPokemon = dataGridView1.CurrentRow.Cells["PokemonID"].Value.ToString();
-                    PokemonCN.EditarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, pictureBoxPokemon.Image, IDPokemon);
+                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                    pictureBoxPokemon.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    IDPokemon = TablaPokemon.CurrentRow.Cells["PokemonID"].Value.ToString();
+
+                    PokemonCN.EditarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked,ms.GetBuffer(), IDPokemon);
                     MessageBox.Show("El dato se modificó correctamente");
                     MostrarPokemon();
                     limpiarForm();
@@ -64,9 +70,9 @@ namespace Atidex
         //eliminar
         private void button3_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (TablaPokemon.SelectedRows.Count > 0)
             {
-                IDPokemon = dataGridView1.CurrentRow.Cells["PokemonID"].Value.ToString();
+                IDPokemon = TablaPokemon.CurrentRow.Cells["PokemonID"].Value.ToString();
                 PokemonCN.EliminarPokemon(IDPokemon);
                 MessageBox.Show("El dato se eliminó correctamente");
                 MostrarPokemon();
@@ -88,21 +94,25 @@ namespace Atidex
         private void MostrarPokemon()
         {
             CdN_Pokemon pokemon = new CdN_Pokemon();
-            dataGridView1.DataSource = pokemon.MostrarProd();
+            TablaPokemon.DataSource = pokemon.MostrarProd();
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (TablaPokemon.SelectedRows.Count > 0)
             {
                 EditarPokemon = true;
 
-                textBoxNombre.Text = dataGridView1.CurrentRow.Cells["NombrePokemon"].Value.ToString();
-                textBoxGeneracion.Text = dataGridView1.CurrentRow.Cells["GeneracionPokemon"].Value.ToString();
-                var imageCell = (DataGridViewImageCell)dataGridView1.CurrentRow.Cells[3];
-                Image value = (Image)imageCell.Value;
-                pictureBoxPokemon.Image = value;
+                textBoxNombre.Text = TablaPokemon.CurrentRow.Cells["NombrePokemon"].Value.ToString();
+                textBoxGeneracion.Text = TablaPokemon.CurrentRow.Cells["GeneracionPokemon"].Value.ToString();
+
+                //con esto obtengo la imagen 
+                System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                Bitmap img = (Bitmap)TablaPokemon.CurrentRow.Cells[4].Value;
+                img.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                pictureBoxPokemon.Image =  Image.FromStream(ms);
+
             }
 
             else
@@ -116,9 +126,9 @@ namespace Atidex
             {
                 OpenFileDialog dialog = new OpenFileDialog();
                 dialog.Filter = "jpg files (*.jpg)|*.jpg| PNG files(*.png)|*.png| All Files (*.*)|*.*";
-                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    imageLocation = dialog.FileName;
+                    imageLocation = dialog.FileName.ToString();
                     pictureBoxPokemon.ImageLocation = imageLocation;
                 }
             }
@@ -126,6 +136,11 @@ namespace Atidex
             {
                 MessageBox.Show("Ocurrió un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+
+        private void pictureBoxPokemon_Click(object sender, EventArgs e)
+        {
 
         }
     }

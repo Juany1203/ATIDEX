@@ -57,13 +57,14 @@ create Table TrainerPokemon(
 TrainerPokemonID int IDENTITY(0,1) PRIMARY KEY not null,
 EntrenadorIDTrainerPokemon int foreign key(EntrenadorIDTrainerPokemon) references Usuario(UsuarioID),
 PokemonID int foreign key(PokemonID) references Pokemon(PokemonID),
+NickName varchar(60) not null,
 saludTrainerPokemon varchar not null,
 ataqueEspecialTrainerPokemon varchar(50) not null,
 defensaTrainerEspecialPokemon varchar(50) not null,     
 ataqueTrainerPokemon varchar(50) not null,
 defensaTrainerPokemon varchar(50) not null, 
 velocidadTrainerPokemon varchar(50) not null,
-EstadoPokemon varchar(50) not null,
+EstadoPokemon bit,
 )
 
 -- tabla del los tipos de pokemon y movimientos que hay
@@ -113,7 +114,7 @@ año varchar(50) not null,
 Descripcion varchar(500) not null,
 UserIDBitacora int foreign key (UserIDBitacora) references Usuario (UsuarioID),
 )
-drop table Bitacora
+drop table TrainerPokemon
 
 --TABLAS 
 

@@ -33,7 +33,8 @@ namespace Atidex
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.TablaPokemon = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxGeneracion = new System.Windows.Forms.TextBox();
@@ -46,45 +47,48 @@ namespace Atidex
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBoxPokemon = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TablaPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // TablaPokemon
             // 
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.TablaPokemon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.TablaPokemon.BackgroundColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TablaPokemon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.TablaPokemon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
+            this.TablaPokemon.DefaultCellStyle = dataGridViewCellStyle3;
+            this.TablaPokemon.Location = new System.Drawing.Point(12, 12);
+            this.TablaPokemon.Name = "TablaPokemon";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(386, 359);
-            this.dataGridView1.TabIndex = 0;
+            this.TablaPokemon.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.TablaPokemon.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.TablaPokemon.RowTemplate.Height = 25;
+            this.TablaPokemon.Size = new System.Drawing.Size(386, 359);
+            this.TablaPokemon.TabIndex = 0;
             // 
             // label1
             // 
@@ -204,6 +208,7 @@ namespace Atidex
             this.pictureBoxPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxPokemon.TabIndex = 12;
             this.pictureBoxPokemon.TabStop = false;
+            this.pictureBoxPokemon.Click += new System.EventHandler(this.pictureBoxPokemon_Click);
             // 
             // button4
             // 
@@ -219,7 +224,7 @@ namespace Atidex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(772, 437);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBoxPokemon);
             this.Controls.Add(this.button3);
@@ -232,11 +237,11 @@ namespace Atidex
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.TablaPokemon);
             this.Name = "FormAdminPokemon";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormAdminPokemon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TablaPokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -258,5 +263,6 @@ namespace Atidex
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBoxPokemon;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView TablaPokemon;
     }
 }

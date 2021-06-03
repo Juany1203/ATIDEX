@@ -17,11 +17,11 @@ namespace CapaDeDatos
         SqlDataReader leer;
         DataTable tabla = new DataTable();
         SqlCommand comando = new SqlCommand();
-        int IDEntrenador = UserLoginCache.IdUser;
+        private int IDEntrenador = UserLoginCache.IdUser;
 
         public DataTable Mostrar()
         {
-
+            comando.Parameters.Clear();
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "MostrarPokemon";
             comando.CommandType = CommandType.StoredProcedure;
@@ -43,6 +43,7 @@ namespace CapaDeDatos
             {
                 Legendario = 1;
             }
+            comando.Parameters.Clear();
             comando.Connection = conexion.AbrirConexion();
 
             comando.CommandText = "InsertarPokemon";
@@ -68,7 +69,7 @@ namespace CapaDeDatos
             {
                 Legendario = 1;
             }
-
+            comando.Parameters.Clear();
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "EditarPokemon";
             comando.CommandType = CommandType.StoredProcedure;
@@ -99,12 +100,13 @@ namespace CapaDeDatos
 
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "MostrarTrainerPokemon";
+
             comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@EntrenadorID", IDEntrenador);
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             comando.Parameters.Clear();
             conexion.CerrarConexion();
-
             return tabla;
 
         }
@@ -118,13 +120,14 @@ namespace CapaDeDatos
             {
                 EstadoP = 1;
             }
+            comando.Parameters.Clear();
             comando.Connection = conexion.AbrirConexion();
 
             comando.CommandText = "InsertarTrainerPokemon";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@EntrenadorID", IDEntrenador);
             comando.Parameters.AddWithValue("@PokemonID", PokemonID);
-            comando.Parameters.AddWithValue("@NickName", PokemonID);
+            comando.Parameters.AddWithValue("@NickName", NickName);
             comando.Parameters.AddWithValue("@Salud", salud);
             comando.Parameters.AddWithValue("@Ataque", ataque);
             comando.Parameters.AddWithValue("@Defensa", defensa);
@@ -152,7 +155,7 @@ namespace CapaDeDatos
             comando.Parameters.AddWithValue("@TrainerPokemonID", IDTrainerPokemon);
             comando.Parameters.AddWithValue("@EntrenadorID", IDEntrenador);
             comando.Parameters.AddWithValue("@PokemonID", PokemonID);
-            comando.Parameters.AddWithValue("@NickName", PokemonID);
+            comando.Parameters.AddWithValue("@NickName", NickName);
             comando.Parameters.AddWithValue("@Salud", salud);
             comando.Parameters.AddWithValue("@Ataque", ataque);
             comando.Parameters.AddWithValue("@Defensa", defensa);
@@ -166,6 +169,7 @@ namespace CapaDeDatos
         }
         public void EliminarTrainerPokemon(int TrainerPokemonid)
         {
+            comando.Parameters.Clear();
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "EliminarTrainerPokemon";
             comando.CommandType = CommandType.StoredProcedure;
@@ -175,6 +179,60 @@ namespace CapaDeDatos
             conexion.CerrarConexion();
         }
 
+
+        // Funciones para la tabla intermedia de Pokemon y movimientos
+
+        public DataTable MostrarPokemonMov()
+        {
+
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "MostrarTrainerPokemonMov";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@EntrenadorID", IDEntrenador);
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return tabla;
+
+        }
+        public void InsertarTrainerPokemonMov(int trainerPokemonID, int MovID)
+        {
+            comando.Parameters.Clear();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "InsertTrainerPokemonMov";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@TrainerPokemonID", trainerPokemonID);
+            comando.Parameters.AddWithValue("@MovimientosID", MovID);
+            comando.Parameters.AddWithValue("@EntrenadorID", IDEntrenador);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+        }
+        public void EditarTrainerPokemonMov(int MovPokemonID,int trainerPokemonID, int MovID)
+        {
+            comando.Parameters.Clear();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "InsertTrainerPokemonMov";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@TrainerPokemonMov", MovPokemonID);
+            comando.Parameters.AddWithValue("@MovimientosID", trainerPokemonID);
+            comando.Parameters.AddWithValue("@EntrenadorID", MovID);
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+        }
+
+        public void EliminarTrainerPokemonMov(int MovPokemonID)
+        {
+            comando.Parameters.Clear();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EliminarTrainerPokemonMov";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@TrainerPokemonMov", MovPokemonID);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+        }
 
     }
 }

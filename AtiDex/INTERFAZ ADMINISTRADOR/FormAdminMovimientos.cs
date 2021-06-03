@@ -103,5 +103,10 @@ namespace Atidex
             txtDescripcion.Clear();
             txtTipo.Clear();
         }
+
+        private void dataGridViewMovimientos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

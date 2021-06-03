@@ -54,6 +54,27 @@ namespace CapaDeNegocio
         {
             objetoCD.EliminarTrainerPokemon(Convert.ToInt32(IDTrainerPokemon));
         }
+        // Funciones para la tabla intermedia de Trainer Pokemon y Movimientos
+        
+        public DataTable MostrarTrainerPokemonMov()
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoCD.MostrarPokemonMov();
+            return tabla;
+        }
+        public void InsertarTrainerPokemonMov (string trainerPokemonID, string MovID)
+        {
+            objetoCD.InsertarTrainerPokemonMov(Convert.ToInt32(trainerPokemonID), Convert.ToInt32(MovID));
+        }
+        public void EditarTrainerPokemonMov(string MovPokemonID, string trainerPokemonID, string MovID)
+        {
+            objetoCD.EditarTrainerPokemonMov(Convert.ToInt32(MovPokemonID), Convert.ToInt32(trainerPokemonID), Convert.ToInt32(MovID));
+        }
+        public void EliminarTrainerPokemonMov (string MovPokemonID)
+        {
+            objetoCD.EliminarTrainerPokemonMov(Convert.ToInt32(MovPokemonID));
+        }
+
 
     }
 }

@@ -85,3 +85,33 @@ create proc EliminarTrainerPokemon
 as
 delete from TrainerPokemon where TrainerPokemonID = @TrainerPokemon
 go
+-- TrainerPokemonMov Funciones
+create proc EditarTrainerPokemonMov
+@TrainerPokemonMov int,
+@MovimientoID int,
+@TrainerPokemonID int 
+as
+update TABLA_INTERMEDIA_MovPokemon set Movimiento_IntermediaID = @MovimientoID, TrainerPokemon_IntermediaID = @TrainerPokemonID
+where MovPokemonID = @TrainerPokemonMov
+go
+
+create proc EliminarTrainerPokemonMov
+@TrainerPokemonMov int
+as
+delete from TABLA_INTERMEDIA_MovPokemon where MovPokemonID = @TrainerPokemonMov
+go
+
+create proc MostrarTrainerPokemonMov
+@EntrenadorID int
+as
+select  *from TABLA_INTERMEDIA_MovPokemon
+where  EntrenadorID = @EntrenadorID
+go
+
+create proc InsertTrainerPokemonMov
+@TrainerPokemonID int,
+@MovimientosID int,
+@EntrenadorID int
+as
+insert into TABLA_INTERMEDIA_MovPokemon values (@TrainerPokemonID,@MovimientosID, @EntrenadorID)
+go

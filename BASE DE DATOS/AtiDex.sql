@@ -58,7 +58,7 @@ TrainerPokemonID int IDENTITY(0,1) PRIMARY KEY not null,
 EntrenadorIDTrainerPokemon int foreign key(EntrenadorIDTrainerPokemon) references Usuario(UsuarioID),
 PokemonID int foreign key(PokemonID) references Pokemon(PokemonID),
 NickName varchar(60) not null,
-saludTrainerPokemon varchar not null,
+saludTrainerPokemon varchar(50) not null,
 ataqueEspecialTrainerPokemon varchar(50) not null,
 defensaTrainerEspecialPokemon varchar(50) not null,     
 ataqueTrainerPokemon varchar(50) not null,
@@ -90,8 +90,10 @@ TipoID int foreign key (TipoID) references Tipo(TipoID),
 --Relaciona tabla Pokemon por entrenador con tabla movimientos
 create table TABLA_INTERMEDIA_MovPokemon
 (
+MovPokemonID int IDENTITY(0,1) PRIMARY KEY not null,
 TrainerPokemon_IntermediaID int foreign key(TrainerPokemon_IntermediaID) references TrainerPokemon(TrainerPokemonID),
 Movimiento_IntermediaID int foreign key (Movimiento_IntermediaID) references Movimientos(MovimientoID),
+EntrenadorID int foreign key (EntrenadorID) references Usuario(UsuarioID),
 )
 
 --tabla intermedia entre los pokemones genericos y los tipos

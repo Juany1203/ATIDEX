@@ -10,7 +10,7 @@ namespace CapaDeDatos
 {
     public class CD_ConexionTipos
     {
-        private SqlConnection Conexion = new SqlConnection("Server= LAPTOP-C9UV6KTE; DataBase=AtiDex; Integrated Security=True");
+        private SqlConnection Conexion = new SqlConnection("Server= (local); DataBase=AtiDex; Integrated Security=True");
 
         public SqlConnection AbrirConexion()
         {

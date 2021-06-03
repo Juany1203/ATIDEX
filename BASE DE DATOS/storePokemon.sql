@@ -37,8 +37,9 @@ go
 
 
 Create proc MostrarTrainerPokemon
+@EntrenadorID int
 as
-select *from TrainerPokemon
+select *from TrainerPokemon where EntrenadorIDTrainerPokemon = @EntrenadorID
 go
 -- Stored procedures para Trainer pokemon
 

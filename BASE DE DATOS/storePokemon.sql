@@ -37,9 +37,11 @@ go
 
 
 Create proc MostrarTrainerPokemon
+@EntrenadorID int
 as
-select *from TrainerPokemon
+select *from TrainerPokemon where EntrenadorIDTrainerPokemon = @EntrenadorID
 go
+
 -- Stored procedures para Trainer pokemon
 
 
@@ -115,3 +117,62 @@ create proc InsertTrainerPokemonMov
 as
 insert into TABLA_INTERMEDIA_MovPokemon values (@TrainerPokemonID,@MovimientosID, @EntrenadorID)
 go
+
+--Procedimientos Visitante
+
+--Busqueda pokemon
+Create proc VisitantePokemon
+@nombre varchar (50),
+@generacion varchar (50)
+as
+if (NULLIF(@nombre, '') IS NULL and NULLIF(@generacion, '') IS NULL)
+begin
+select *from Pokemon 
+end
+else
+begin
+select *from Pokemon where nombrePokemon = @nombre or generacionPokemon = @generacion
+end
+go
+
+
+drop proc VisitantePokemon
+
+exec VisitantePokemon '','' 
+
+
+--Busqueda entrenador
+
+Create proc VisitanteEntrenador
+@nombre varchar (50),
+@Apellido1 varchar (50),
+@provincia varchar (50)
+as
+if (NULLIF(@nombre, '') IS NULL and NULLIF(@Apellido1, '') IS NULL and NULLIF(@provincia, '') IS NULL)
+begin
+select *from Usuario
+end
+else
+begin
+select *from Usuario where nombreUsuario = @nombre or apellido1Usuario = @Apellido1 or provinciaUsuario = @provincia
+end
+go
+
+exec VisitanteEntrenador 'Juan Carlos','', ''
+
+--Busqueda movimiento
+
+Create proc VisitanteMovimiento
+@nombre varchar (50)
+as
+if (NULLIF(@nombre, '') IS NULL)
+begin
+select *from Movimientos
+end
+else
+begin
+select *from Movimientos where nombreMovimiento = @nombre 
+end
+go
+
+exec VisitanteMovimiento 'achu'

@@ -12,3 +12,17 @@ C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeNegocio\o
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.pdb
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaComun.dll
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaComun.pdb
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeNegocio.deps.json
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeNegocio.dll
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeNegocio.pdb
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaComun.dll
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeDatos.dll
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaComun.pdb
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\bin\Debug\netcoreapp3.1\CapaDeDatos.pdb
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.csproj.AssemblyReference.cache
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.AssemblyInfoInputs.cache
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.AssemblyInfo.cs
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.csproj.CopyComplete
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.dll
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaDeNegocio\obj\Debug\netcoreapp3.1\CapaDeNegocio.pdb

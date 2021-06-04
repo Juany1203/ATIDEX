@@ -97,7 +97,7 @@ EntrenadorID int foreign key (EntrenadorID) references Usuario(UsuarioID),
 )
 
 --tabla intermedia entre los pokemones genericos y los tipos
-
+drop table TrainerPokemon
 
 create table intPOKETIPO
 (

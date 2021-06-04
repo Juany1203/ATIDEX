@@ -8,7 +8,7 @@ namespace CapaDeDatos
 {
     public class CD_ConexionPokemon
     {
-        private SqlConnection Conexion = new SqlConnection("Server=(local);DataBase= AtiDex;Integrated Security=true");
+        private SqlConnection Conexion = new SqlConnection("Server=LAPTOP-DOSP8S31\\SQLEXPRESS;DataBase= AtiDex;Integrated Security=true");
         public SqlConnection AbrirConexion()
         {
             if (Conexion.State == ConnectionState.Closed)

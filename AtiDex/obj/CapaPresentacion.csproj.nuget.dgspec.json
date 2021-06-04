@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\Atidex\\CapaPresentacion.csproj": {}
+    "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\Atidex\\CapaPresentacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\Atidex\\CapaPresentacion.csproj": {
+    "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\Atidex\\CapaPresentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\Atidex\\CapaPresentacion.csproj",
+        "projectUniqueName": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\Atidex\\CapaPresentacion.csproj",
         "projectName": "CapaPresentacion",
-        "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\Atidex\\CapaPresentacion.csproj",
-        "packagesPath": "C:\\Users\\juany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\Atidex\\obj\\",
+        "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\Atidex\\CapaPresentacion.csproj",
+        "packagesPath": "C:\\Users\\Juanca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\Atidex\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juanca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj": {
-                "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj"
+              "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj": {
+                "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj"
               },
-              "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj": {
-                "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj"
+              "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj": {
+                "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj"
               }
             }
           }
@@ -70,21 +70,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj": {
+    "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj",
+        "projectUniqueName": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj",
         "projectName": "CapaComun",
-        "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj",
-        "packagesPath": "C:\\Users\\juany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\obj\\",
+        "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj",
+        "packagesPath": "C:\\Users\\Juanca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juanca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -127,21 +127,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
+    "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
+        "projectUniqueName": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
         "projectName": "CapaDeDatos",
-        "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
-        "packagesPath": "C:\\Users\\juany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\obj\\",
+        "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj",
+        "packagesPath": "C:\\Users\\Juanca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juanca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,8 +155,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj": {
-                "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj"
+              "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj": {
+                "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj"
               }
             }
           }
@@ -194,21 +194,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj": {
+    "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj",
         "projectName": "CapaDeNegocio",
-        "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj",
-        "packagesPath": "C:\\Users\\juany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\obj\\",
+        "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\CapaDeNegocio.csproj",
+        "packagesPath": "C:\\Users\\Juanca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juanca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -222,11 +222,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj": {
-                "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj"
+              "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj": {
+                "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaComun\\CapaComun.csproj"
               },
-              "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
-                "projectPath": "C:\\Users\\juany\\OneDrive\\Desktop\\respaldo\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj"
+              "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj": {
+                "projectPath": "C:\\Users\\Juanca\\Documents\\GitHub\\ATIDEX\\CapaDeDatos\\CapaDeDatos.csproj"
               }
             }
           }
@@ -258,7 +258,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

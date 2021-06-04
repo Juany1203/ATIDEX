@@ -15,7 +15,7 @@ namespace CapaDeDatos
 
         public ConnectionToSql()
         {
-            connectionString = "Server=(local) ;DataBase= AtiDex; integrated security = true";
+            connectionString = "Server=LAPTOP-DOSP8S31\\SQLEXPRESS ;DataBase= AtiDex; integrated security = true";
         }
         protected SqlConnection GetConnection()
         {
@@ -27,7 +27,7 @@ namespace CapaDeDatos
     }
     public class CD_Conexion
     {
-        private SqlConnection conexion = new SqlConnection("Server=(local);DataBase= AtiDex; integrated security = true");
+        private SqlConnection conexion = new SqlConnection("Server=LAPTOP-DOSP8S31\\SQLEXPRESS;DataBase= AtiDex; integrated security = true");
 
         public SqlConnection AbrirConexion()
         {

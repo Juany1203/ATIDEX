@@ -7,3 +7,12 @@ C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaComun\bin\D
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaComun\bin\Debug\netcoreapp3.1\CapaComun.pdb
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaComun\obj\Debug\netcoreapp3.1\CapaComun.dll
 C:\Users\juany\OneDrive\Desktop\respaldo\Documents\GitHub\ATIDEX\CapaComun\obj\Debug\netcoreapp3.1\CapaComun.pdb
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaComun\bin\Debug\netcoreapp3.1\CapaComun.deps.json
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaComun\bin\Debug\netcoreapp3.1\CapaComun.dll
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaComun\bin\Debug\netcoreapp3.1\CapaComun.pdb
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaComun\obj\Debug\netcoreapp3.1\CapaComun.csproj.AssemblyReference.cache
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaComun\obj\Debug\netcoreapp3.1\CapaComun.AssemblyInfoInputs.cache
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaComun\obj\Debug\netcoreapp3.1\CapaComun.AssemblyInfo.cs
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaComun\obj\Debug\netcoreapp3.1\CapaComun.csproj.CoreCompileInputs.cache
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaComun\obj\Debug\netcoreapp3.1\CapaComun.dll
+C:\Users\Juanca\Documents\GitHub\ATIDEX\CapaComun\obj\Debug\netcoreapp3.1\CapaComun.pdb

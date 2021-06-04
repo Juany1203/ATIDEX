@@ -21,7 +21,7 @@ namespace CapaDeDatos
 {
     public class CD_ConexionMovimientos
     {
-        private SqlConnection Conexion = new SqlConnection("Server = LAPTOP-DOSP8S31\\SQLEXPRESS; Database = AtiDex; integrated security = true"); //Server es local(Cualquier ordenador)
+        private SqlConnection Conexion = new SqlConnection("Server = (local); Database = AtiDex; integrated security = true"); //Server es local(Cualquier ordenador)
 
         public SqlConnection AbrirConexion()
         {

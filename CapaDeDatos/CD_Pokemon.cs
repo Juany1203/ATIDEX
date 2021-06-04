@@ -49,7 +49,7 @@ namespace CapaDeDatos
         {
             int Legendario = 0;
 
-            
+
 
             if (legendarioPokemon == true)
             {
@@ -122,7 +122,7 @@ namespace CapaDeDatos
             return tabla;
 
         }
-        public void InsertarTrainerPokemon( int PokemonID, string NickName, string salud, string ataque, string defensa, string atkspecial, string defspecial, string velocidad, bool Estado) // Funcion para insertar un nuevo pokemon de un entrenador
+        public void InsertarTrainerPokemon(int PokemonID, string NickName, string salud, string ataque, string defensa, string atkspecial, string defspecial, string velocidad, bool Estado) // Funcion para insertar un nuevo pokemon de un entrenador
         {
             int EstadoP = 0;
 
@@ -223,7 +223,7 @@ namespace CapaDeDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-        public void EditarTrainerPokemonMov(int MovPokemonID,int trainerPokemonID, int MovID)
+        public void EditarTrainerPokemonMov(int MovPokemonID, int trainerPokemonID, int MovID)
         {
             comando.Parameters.Clear();
             comando.Connection = conexion.AbrirConexion();
@@ -247,9 +247,52 @@ namespace CapaDeDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
+        public DataTable VisitanteEntrador(string Nombre, string apellido1, string provincia) // Método de lectura de  pokemones pertenecientes a entrenadores
+        {
+            comando.Parameters.Clear();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "VisitanteEntrenador";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@nombre", Nombre);
+            comando.Parameters.AddWithValue("@Apellido1", apellido1);
+            comando.Parameters.AddWithValue("@provincia", provincia);
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return tabla;
+
+        }
+        public DataTable VisitantePokemon(string Nombre, string generacion) // Método de lectura de  pokemones pertenecientes a entrenadores
+        {
+            comando.Parameters.Clear();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "VisitantePokemon";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@nombre", Nombre);
+            comando.Parameters.AddWithValue("@generacion", generacion);
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return tabla;
 
 
-        
+        }
+        public DataTable VisitanteMovimiento(string Nombre ) // Método de lectura de  pokemones pertenecientes a entrenadores
+        {
+            comando.Parameters.Clear();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "VisitanteMovimiento";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@nombre", Nombre);
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
+            return tabla;
+        }
+
+
     }
-
 }

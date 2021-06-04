@@ -11,6 +11,7 @@ namespace Atidex
 {
     public partial class FormVisitanteMovimientos : Form
     {
+        private string Nombre = "";
         CN_Movimientos movimientoCN = new CN_Movimientos();
         public FormVisitanteMovimientos()
         {
@@ -19,8 +20,8 @@ namespace Atidex
 
         private void MostrarMovimientos()
         {
-            CN_Movimientos movimiento = new CN_Movimientos(); // Se utiliza para refrecar el metodo y evitar duplicar tabla
-            dataGridView1.DataSource = movimiento.MostrarMov(); // Muestra elementos en pantalla
+            CdN_Pokemon movimiento = new CdN_Pokemon(); // Se utiliza para refrecar el metodo y evitar duplicar tabla
+            dataGridView1.DataSource = movimiento.VisitanteMovimiento(Nombre); // Muestra elementos en pantalla
         }
 
         private void FormVisitanteMovimientos_Load(object sender, EventArgs e)
@@ -30,6 +31,21 @@ namespace Atidex
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                Nombre = textBox1.Text;
+                MostrarMovimientos();
+            }
+            catch
+            {
+                MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:");
+
+            }
         }
     }
 }

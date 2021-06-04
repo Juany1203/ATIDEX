@@ -150,15 +150,16 @@ Create proc VisitanteEntrenador
 as
 if (NULLIF(@nombre, '') IS NULL and NULLIF(@Apellido1, '') IS NULL and NULLIF(@provincia, '') IS NULL)
 begin
-select *from Usuario
+select  nombreUsuario, apellido1Usuario, provinciaUsuario, correoElectronicoUsuario from Usuario
 end
 else
 begin
-select *from Usuario where nombreUsuario = @nombre or apellido1Usuario = @Apellido1 or provinciaUsuario = @provincia
+select nombreUsuario, apellido1Usuario, provinciaUsuario, correoElectronicoUsuario 
+from Usuario where nombreUsuario = @nombre or apellido1Usuario = @Apellido1 or provinciaUsuario = @provincia
 end
 go
-
-exec VisitanteEntrenador 'Juan Carlos','', ''
+drop proc VisitanteEntrenador
+exec VisitanteEntrenador '','', ''
 
 --Busqueda movimiento
 

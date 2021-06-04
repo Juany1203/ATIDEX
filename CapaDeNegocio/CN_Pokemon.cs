@@ -87,6 +87,27 @@ namespace CapaDeNegocio
         {
             objetoCD.EliminarTrainerPokemonMov(Convert.ToInt32(MovPokemonID));
         }
+        // Funciones de Insertar
+        public DataTable visitanteEntrenador(string nombre,string apellido1, string provincia)
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoCD.VisitanteEntrador(nombre, apellido1,provincia);
+            return tabla;
+        }
+        public DataTable visitantePokemon(string nombre, string generacion)
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoCD.VisitantePokemon(nombre,generacion);
+            return tabla;
+        }
+        public DataTable VisitanteMovimiento(string nombre)
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoCD.VisitanteMovimiento(nombre);
+            return tabla;
+        }
+
+
 
 
     }

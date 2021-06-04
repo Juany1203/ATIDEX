@@ -41,10 +41,10 @@
     <Compile Update="INTERFAZ VISITANTE\FormVisitanteEntrenadores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="INTERFAZ VISITANTE\FormVisitantePokemones.cs">
+    <Compile Update="INTERFAZ VISITANTE\FormVisitanteMovimientos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="INTERFAZ VISITANTE\FormVisitanteMovimientos.cs">
+    <Compile Update="INTERFAZ VISITANTE\FormVisitantePokemones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LOGIN\FormLoading.cs">

@@ -63,20 +63,97 @@ namespace Atidex
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            try
+            if(UserTextBox.Text == null)
             {
-               
-                if (MessageBox.Show("¿Desea modificar el perfil? \n se cerrará la sesión.", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                MessageBox.Show("Ingrese Por favor el Username");
+
+            }
+            else
+            {
+                if (PassTextBox.Text == "")
+                    MessageBox.Show("Ingrese Por favor la contraseña");
+                else
                 {
-                    UsuarioCN.ModificarUsuario(idUsuario, UserTextBox.Text, PassTextBox.Text, false, NombreTextBox.Text, Apellido1TextBox.Text, Apellido2TextBox.Text, ProvinciaTextBox.Text, CantonTextBox.Text, DistritoTextBox.Text, DireccionTextBox.Text, TelefonoTextBox.Text, EmailtextBox.Text, SitioWebTextBox.Text, FacebookTextBox.Text, TwiterTextBox.Text, InstagramTextBox.Text);
-                    Papa.Close();
+                    if (NombreTextBox.Text == "")
+                        MessageBox.Show("Ingrese Por favor El Nombre");
+                    else
+                    {
+                        if (Apellido1TextBox.Text == "")
+                            MessageBox.Show("Ingrese Por favor El apellido 1");
+                        else
+                        {
+                            if (Apellido2TextBox.Text == "")
+                                MessageBox.Show("Ingrese Por favor El apellido 2");
+                            else
+                            {
+                                if (ProvinciaTextBox.Text == "")
+                                    MessageBox.Show("Ingrese Por favor la provincia");
+                                else
+                                {
+                                    if (CantonTextBox.Text == "")
+                                        MessageBox.Show("Ingrese Por favor el canton");
+                                    else
+                                    {
+                                        if (DistritoTextBox.Text == "")
+                                            MessageBox.Show("Ingrese Por favor El Distrito");
+                                        else
+                                        {
+                                            if (DireccionTextBox.Text == "")
+                                                MessageBox.Show("Ingrese Por favor la direccion");
+                                            else
+                                            {
+                                                if (TelefonoTextBox.Text == "")
+                                                    MessageBox.Show("Ingrese Por favor El telefono");
+                                                else
+                                                {
+                                                    if (EmailtextBox.Text == "")
+                                                        MessageBox.Show("Ingrese Por favor El email");
+                                                    else
+                                                    {
+                                                        try
+                                                        {
+
+                                                            if (MessageBox.Show("¿Desea modificar el perfil? \n se cerrará la sesión.", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                                                            {
+                                                                UsuarioCN.ModificarUsuario(idUsuario, UserTextBox.Text, PassTextBox.Text, false, NombreTextBox.Text, Apellido1TextBox.Text, Apellido2TextBox.Text, ProvinciaTextBox.Text, CantonTextBox.Text, DistritoTextBox.Text, DireccionTextBox.Text, TelefonoTextBox.Text, EmailtextBox.Text, SitioWebTextBox.Text, FacebookTextBox.Text, TwiterTextBox.Text, InstagramTextBox.Text);
+                                                                Papa.Close();
+                                                            }
+                                                        }
+                                                        catch
+                                                        {
+                                                            MessageBox.Show("No se pudo insertar");
+                                                        }
+
+                                                    }
+
+                                                }
+
+                                            }
+
+
+                                        }
+
+
+                                    }
+
+
+                                }
+
+
+
+                            }
+
+
+                        }
+
+
+                    }
+
                 }
+
+
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
-            }
+
         }
 
         private void Logout(object sender, FormClosedEventArgs e)

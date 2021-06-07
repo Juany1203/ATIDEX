@@ -65,35 +65,195 @@ namespace Atidex
             {
                 if (EditarUsuario == false)
                 {
-                    try
+                    if (textBoxUsername.Text == "")
+                        MessageBox.Show("por favor ingrese un Username");
+                    else
                     {
-                        UsuarioCN.InsertarUsuario(textBoxUsername.Text, textBoxPass.Text, checkBoxAdmin.Checked, textBoxNombre.Text, textBoxApellido1.Text, textBoxApellido2.Text, textBoxProvincia.Text, textBoxCanton.Text, textBoxDistrito.Text, textBoxDireccion.Text, textBoxTelefono.Text, textBoxEmail.Text, textBoxSitioWeb.Text, textBoxFacebook.Text, textBoxTwitter.Text, textBoxIG.Text);
-                        MessageBox.Show("El dato se insertó correctamente");
-                        MostrarUsuarios();
-                        limpiarForm();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
+                        if (textBoxPass.Text == "")
+                            MessageBox.Show("por favor ingrese una contraseña");
+                        else
+                        {
+                            if (textBoxNombre.Text == "")
+                                MessageBox.Show("por favor ingrese un Nombre");
+                            else
+                            {
+                                if (textBoxApellido1.Text == "")
+                                    MessageBox.Show("por favor ingrese un apellido 1");
+                                else
+                                {
+                                    if (textBoxApellido2.Text == "")
+                                        MessageBox.Show("por favor ingrese un apellido 2");
+                                    else
+                                    {
+                                        if (textBoxProvincia.Text == "")
+                                            MessageBox.Show("por favor ingrese una Provincia");
+                                        else
+                                        {
+                                            if (textBoxProvincia.Text == "")
+                                                MessageBox.Show("por favor ingrese una provincia");
+                                            else
+                                            {
+                                                if (textBoxCanton.Text == "")
+                                                    MessageBox.Show("por favor ingrese un cantón");
+                                                else
+                                                {
+                                                    if (textBoxDistrito.Text == "")
+                                                        MessageBox.Show("por favor ingrese un distrito");
+                                                    else
+                                                    {
+                                                        if (textBoxTelefono.Text == "")
+                                                            MessageBox.Show("por favor ingrese un telefono");
+                                                        else
+                                                        {
+                                                            if (textBoxEmail.Text == "")
+                                                                MessageBox.Show("por favor ingrese un email");
+                                                            else
+                                                            {
+                                                                try
+                                                                {
+                                                                    UsuarioCN.InsertarUsuario(textBoxUsername.Text, textBoxPass.Text, checkBoxAdmin.Checked, textBoxNombre.Text, textBoxApellido1.Text, textBoxApellido2.Text, textBoxProvincia.Text, textBoxCanton.Text, textBoxDistrito.Text, textBoxDireccion.Text, textBoxTelefono.Text, textBoxEmail.Text, textBoxSitioWeb.Text, textBoxFacebook.Text, textBoxTwitter.Text, textBoxIG.Text);
+                                                                    MessageBox.Show("El dato se insertó correctamente");
+                                                                    MostrarUsuarios();
+                                                                    limpiarForm();
+                                                                }
+                                                                catch (Exception)
+                                                                {
+                                                                    MessageBox.Show("No se pudo insertar ");
+
+                                                                }
+
+
+                                                            }
+
+
+                                                        }
+
+
+                                                    }
+
+
+                                                }
+
+
+                                            }
+
+
+                                        }
+
+
+                                    }
+
+
+                                }
+
+
+                            }
+
+                        }
 
                     }
+
+
+
+
+
                 }
                 if (EditarUsuario == true)
                 {
-                    try
+
+                    if (textBoxUsername.Text == "")
+                        MessageBox.Show("por favor ingrese un Username");
+                    else
                     {
-                        UsuarioCN.ModificarUsuario(idUsuario, textBoxUsername.Text, textBoxPass.Text, checkBoxAdmin.Checked, textBoxNombre.Text, textBoxApellido1.Text, textBoxApellido2.Text, textBoxProvincia.Text, textBoxCanton.Text, textBoxDistrito.Text, textBoxDireccion.Text, textBoxTelefono.Text, textBoxEmail.Text, textBoxSitioWeb.Text, textBoxFacebook.Text, textBoxTwitter.Text, textBoxIG.Text);
-                        MessageBox.Show("El dato se modificó correctamente");
-                        MostrarUsuarios();
-                        limpiarForm();
-                        EditarUsuario = false;
+                        if (textBoxPass.Text == "")
+                            MessageBox.Show("por favor ingrese una contraseña");
+                        else
+                        {
+                            if (textBoxNombre.Text == "")
+                                MessageBox.Show("por favor ingrese un Nombre");
+                            else
+                            {
+                                if (textBoxApellido1.Text == "")
+                                    MessageBox.Show("por favor ingrese un apellido 1");
+                                else
+                                {
+                                    if (textBoxApellido2.Text == "")
+                                        MessageBox.Show("por favor ingrese un apellido 2");
+                                    else
+                                    {
+                                        if (textBoxProvincia.Text == "")
+                                            MessageBox.Show("por favor ingrese una Provincia");
+                                        else
+                                        {
+                                            if (textBoxProvincia.Text == "")
+                                                MessageBox.Show("por favor ingrese una provincia");
+                                            else
+                                            {
+                                                if (textBoxCanton.Text == "")
+                                                    MessageBox.Show("por favor ingrese un cantón");
+                                                else
+                                                {
+                                                    if (textBoxDistrito.Text == "")
+                                                        MessageBox.Show("por favor ingrese un distrito");
+                                                    else
+                                                    {
+                                                        if (textBoxTelefono.Text == "")
+                                                            MessageBox.Show("por favor ingrese un telefono");
+                                                        else
+                                                        {
+                                                            if (textBoxEmail.Text == "")
+                                                                MessageBox.Show("por favor ingrese un email");
+                                                            else
+                                                            {
+                                                                try
+                                                                {
+                                                                    UsuarioCN.ModificarUsuario(idUsuario, textBoxUsername.Text, textBoxPass.Text, checkBoxAdmin.Checked, textBoxNombre.Text, textBoxApellido1.Text, textBoxApellido2.Text, textBoxProvincia.Text, textBoxCanton.Text, textBoxDistrito.Text, textBoxDireccion.Text, textBoxTelefono.Text, textBoxEmail.Text, textBoxSitioWeb.Text, textBoxFacebook.Text, textBoxTwitter.Text, textBoxIG.Text);
+                                                                    MessageBox.Show("El dato se modificó correctamente");
+                                                                    MostrarUsuarios();
+                                                                    limpiarForm();
+                                                                    EditarUsuario = false;
+
+                                                                }
+                                                                catch (Exception)
+                                                                {
+                                                                    MessageBox.Show("No se pudo insertar");
+
+                                                                }
+
+
+                                                            }
+
+
+                                                        }
+
+
+                                                    }
+
+
+                                                }
+
+
+                                            }
+
+
+                                        }
+
+
+                                    }
+
+
+                                }
+
+
+                            }
+
+                        }
 
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
 
-                    }
+
+
+                   
                 }
             }
 

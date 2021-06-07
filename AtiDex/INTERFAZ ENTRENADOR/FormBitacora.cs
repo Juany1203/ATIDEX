@@ -26,18 +26,44 @@ namespace Atidex
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            if (textBoxDia.Text == "")
+                MessageBox.Show("por favor ingrese un día");
+            else
             {
-                UsuarioCN.InsertarBit(textBoxDia.Text, textBoxMes.Text, textBoxAno.Text, richTextBoxDesc.Text);
-                MessageBox.Show("El dato se insertó correctamente");
-                MostrarBitacora();
+                if (textBoxMes.Text == "")
+                    MessageBox.Show("por favor ingrese un mes");
+                else
+                {
+                    if (textBoxAno.Text == "")
+                        MessageBox.Show("por favor ingrese un año");
+                    else
+                    {
+                        if (richTextBoxDesc.Text == "")
+                            MessageBox.Show("por favor ingrese una descripción");
+                        else
+                        {
+                            try
+                            {
+                                UsuarioCN.InsertarBit(textBoxDia.Text, textBoxMes.Text, textBoxAno.Text, richTextBoxDesc.Text);
+                                MessageBox.Show("El dato se insertó correctamente");
+                                MostrarBitacora();
+
+                            }
+                            catch (Exception)
+                            {
+                                MessageBox.Show("No se pudo insertar");
+
+                            }
+
+                        }
+
+                    }
+
+                }
 
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
 
-            }
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

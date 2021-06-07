@@ -28,50 +28,88 @@ namespace Atidex
         {
             if (EditarPokemon == false)
             {
-                try
+                if (textBoxNombre.Text == "")
+                    MessageBox.Show("Ingrese Por favor un nombre");
+                else
                 {
-                    if (pictureBoxPokemon.Image == null)
+                    if (textBoxGeneracion.Text == "")
+                        MessageBox.Show("Ingrese Por favor una generación");
+                    else
                     {
-                        MessageBox.Show("Ingrese Por favor Una imagen");
+
+                        if (pictureBoxPokemon.Image == null)
+                        {
+                            MessageBox.Show("Ingrese Por favor Una imagen");
+                        }
+
+                        else
+                        {
+                            try
+                            {
+                                System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                                pictureBoxPokemon.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                                PokemonCN.InsertarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, ms.GetBuffer());
+                                MostrarPokemon();
+                                limpiarForm();
+
+                            }
+                            catch (Exception)
+                            {
+                                MessageBox.Show("No se pudo insertar, verifique si insertó todos los datos necesarios");
+                            }
+
+                        }
+
                     }
 
-                    else 
-                    {
-                        System.IO.MemoryStream ms = new System.IO.MemoryStream();
-                        pictureBoxPokemon.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                        PokemonCN.InsertarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, ms.GetBuffer());
-
-                    }
-
-                    MostrarPokemon();
-                    limpiarForm();
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("No se pudo insertar, verifique si insertó todos los datos necesarios");
-
-                }
+                
             }
             if (EditarPokemon == true)
             {
-                try
-                {
-                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
-                    pictureBoxPokemon.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                    IDPokemon = TablaPokemon.CurrentRow.Cells["PokemonID"].Value.ToString();
 
-                    PokemonCN.EditarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked,ms.GetBuffer(), IDPokemon);
-                    MessageBox.Show("El dato se modificó correctamente");
-                    MostrarPokemon();
-                    limpiarForm();
-                    EditarPokemon = false;
+                if (textBoxNombre.Text == "")
+                    MessageBox.Show("Ingrese Por favor un nombre");
+                else
+                {
+                    if (textBoxGeneracion.Text == "")
+                        MessageBox.Show("Ingrese Por favor una generación");
+                    else
+                    {
+
+                        if (pictureBoxPokemon.Image == null)
+                        {
+                            MessageBox.Show("Ingrese Por favor Una imagen");
+                        }
+
+                        else
+                        {
+                            try
+                            {
+                                System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                                pictureBoxPokemon.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                                IDPokemon = TablaPokemon.CurrentRow.Cells["PokemonID"].Value.ToString();
+
+                                PokemonCN.EditarPokemon(textBoxNombre.Text, textBoxGeneracion.Text, checkBox1.Checked, ms.GetBuffer(), IDPokemon);
+                                MessageBox.Show("El dato se modificó correctamente");
+                                MostrarPokemon();
+                                limpiarForm();
+                                EditarPokemon = false;
+
+                            }
+                            catch (Exception)
+                            {
+                                MessageBox.Show("No se pudo insertar");
+
+                            }
+
+                        }
+
+                    }
 
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
 
-                }
+
             }
 
         }

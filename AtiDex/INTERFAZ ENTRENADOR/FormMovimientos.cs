@@ -41,35 +41,64 @@ namespace Atidex
         {
             if (EditarUsuario == false) // En caso de agregar un nuevo elemento
             {
-                try
+                if (textBoxPokemonID.Text=="")
+                    MessageBox.Show("Ingrese por favor un Id pokemon");
+                else
                 {
-                    TrainerModif.InsertarTrainerPokemonMov(textBoxPokemonID.Text,textBoxMovimientosID.Text);
-                    MessageBox.Show("El dato se Insertó correctamente");
-                    MostrarDatos();
-                    Limpiarform();
-                }
-                catch (Exception )
-                {
-                    MessageBox.Show("No se pudo insertar, por favor intente de nuevo");
+                    if (textBoxMovimientosID.Text == "")
+                        MessageBox.Show("Ingrese por favor un Id movimiento");
+                    else
+                    {
+
+                        try
+                        {
+                            TrainerModif.InsertarTrainerPokemonMov(textBoxPokemonID.Text, textBoxMovimientosID.Text);
+                            MessageBox.Show("El dato se Insertó correctamente");
+                            MostrarDatos();
+                            Limpiarform();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("No se pudo insertar,verifique si los valores ingresados forman parte de los pokemones y movimientos");
+
+                        }
+
+                    }
+
 
                 }
+
             }
             if (EditarUsuario == true) // En caso de modificar un elemento existente 
             {
-                try
+                if (textBoxPokemonID.Text == "")
+                    MessageBox.Show("Ingrese por favor un Id pokemon");
+                else
                 {
-                    TrainerModif.EditarTrainerPokemonMov(PokemonMovID, textBoxPokemonID.Text, textBoxMovimientosID.Text);
-                    MessageBox.Show("El dato se modificó correctamente");
-                    MostrarDatos();
-                    Limpiarform();
-                    EditarUsuario = false;
+                    if (textBoxMovimientosID.Text == "")
+                        MessageBox.Show("Ingrese por favor un Id movimiento");
+                    else
+                    {
+                        try
+                        {
+                            TrainerModif.EditarTrainerPokemonMov(PokemonMovID, textBoxPokemonID.Text, textBoxMovimientosID.Text);
+                            MessageBox.Show("El dato se modificó correctamente");
+                            MostrarDatos();
+                            Limpiarform();
+                            EditarUsuario = false;
+
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("No se pudo insertar, verifique si los valores ingresados forman parte de los pokemones y movimientos");
+
+                        }
+
+                    }
+
 
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("No se pudo insertar, por favor intente de nuevo");
-
-                }
+               
             }
         }
         private void Limpiarform() // Funcion para limpiar las cajas de texto despues de una transacción
@@ -82,11 +111,21 @@ namespace Atidex
         {
             if (dataGridViewMovimientosPokemon.SelectedRows.Count > 0)
             {
-                PokemonMovID = dataGridViewMovimientosPokemon.CurrentRow.Cells["MovPokemonID"].Value.ToString();
-                TrainerModif.EliminarTrainerPokemonMov(PokemonMovID);
-                MessageBox.Show("El dato se eliminó correctamente");
-                MostrarDatos();
-                Limpiarform();
+                if (dataGridViewMovimientosPokemon.SelectedRows.ToString() == null)
+                {
+                    MessageBox.Show("No se pudo eliminar, por favor intente de nuevo");
+
+                }
+                else
+                {
+                    PokemonMovID = dataGridViewMovimientosPokemon.CurrentRow.Cells["MovPokemonID"].Value.ToString();
+                    TrainerModif.EliminarTrainerPokemonMov(PokemonMovID);
+                    MessageBox.Show("El dato se eliminó correctamente");
+                    MostrarDatos();
+                    Limpiarform();
+
+
+                }
 
 
             }
@@ -108,6 +147,11 @@ namespace Atidex
             else
                 MessageBox.Show("Seleccione una fila por favor");
 
+
+        }
+
+        private void dataGridViewPokemones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

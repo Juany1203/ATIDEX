@@ -39,33 +39,47 @@ namespace Atidex
             //INSERTAR
             if (Editar == false)
             {
-                try
+                if (TipoNombre.Text =="")
+                    MessageBox.Show("Por favor ingresar un nombre del tipo");
+                else
                 {
-                    objetoCN.InsertarTipo(TipoNombre.Text);
-                    MessageBox.Show("Se insertó correctamente");
-                    MostrarTipo();
-                    limpiarForm();
+                    try
+                    {
+                        objetoCN.InsertarTipo(TipoNombre.Text);
+                        MessageBox.Show("Se insertó correctamente");
+                        MostrarTipo();
+                        limpiarForm();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("No se pudo insertar por: " + ex);
+                    }
+
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("No se pudo insertar por: " + ex);
-                }
+
             }
             //EDITAR
             if (Editar == true)
             {
-                try
+                if (TipoNombre.Text == "")
+                    MessageBox.Show("Por favor ingresar un nombre del tipo");
+                else
                 {
-                    objetoCN.EditarTipo(TipoNombre.Text, TipoID);
-                    MessageBox.Show("Se editó correctamente");
-                    MostrarTipo();
-                    Editar = false;
-                    limpiarForm();
+                    try
+                    {
+                        objetoCN.EditarTipo(TipoNombre.Text, TipoID);
+                        MessageBox.Show("Se editó correctamente");
+                        MostrarTipo();
+                        Editar = false;
+                        limpiarForm();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("No se pudo insertar");
+                    }
+
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("No se pudo insertar por: " + ex);
-                }
+
             }
         }
         //En la siguiente función, es donde se selecciona la fila de la tabla de tipos que se desea editar
@@ -87,8 +101,7 @@ namespace Atidex
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (dataGridView1
-                .SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count > 0)
             {
                 TipoID = dataGridView1.CurrentRow.Cells["TipoID"].Value.ToString();
                 objetoCN.EliminarTipo(TipoID);

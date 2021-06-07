@@ -40,20 +40,66 @@ namespace Atidex
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            try
+            if (textBoxPokemonID.Text == "")
+                MessageBox.Show("por favor ingrese un pokemonID");
+            else
             {
-                TRainerPokemon.InsertarTrainerPokemon(textBoxPokemonID.Text, textBoxNickName.Text, textBoxHP.Text, textBoxATK.Text, textBoxDEF.Text, textBoxSATK.Text, textBoxSDEF.Text, textBoxVELOCIDAD.Text, checkBoxENequipo.Checked);
-                LimpiarForm();
-                MessageBox.Show("El dato se insertó correctamente");
+                if (textBoxNickName.Text == "")
+                    MessageBox.Show("por favor ingrese un nickname");
+                else
+                {
+                    if (textBoxHP.Text == "")
+                        MessageBox.Show("por favor ingrese una salud");
+                    else
+                    {
+                        if (textBoxATK.Text == "")
+                            MessageBox.Show("por favor ingrese un ataque");
+                        else
+                        {
+                            if (textBoxDEF.Text == "")
+                                MessageBox.Show("por favor ingrese una defensa");
+                            else
+                            {
+                                if (textBoxSATK.Text == "")
+                                    MessageBox.Show("por favor ingrese un ataque especial");
+                                else
+                                {
+                                    if (textBoxSDEF.Text == "")
+                                        MessageBox.Show("por favor ingrese una defensa especial");
+                                    else
+                                    {
+                                        if (textBoxVELOCIDAD.Text == "")
+                                            MessageBox.Show("por favor ingrese una velocidad");
+                                        else
+                                        {
+                                            try
+                                            {
+                                                TRainerPokemon.InsertarTrainerPokemon(textBoxPokemonID.Text, textBoxNickName.Text, textBoxHP.Text, textBoxATK.Text, textBoxDEF.Text, textBoxSATK.Text, textBoxSDEF.Text, textBoxVELOCIDAD.Text, checkBoxENequipo.Checked);
+                                                LimpiarForm();
+                                                MessageBox.Show("El dato se insertó correctamente");
+                                            }
+
+
+                                            catch (Exception)
+                                            {
+                                                MessageBox.Show("No se pudo insertar");
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
             }
-            
-
-            catch (Exception ex)
-            {
-                MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
-
-            }
-
         }
         private void LimpiarForm()
         {

@@ -42,31 +42,73 @@ namespace Atidex
 
         private void btnGuardar_Click(object sender, EventArgs e){ // Evento al clickear botón Guardar
             if(editarMovimiento == false){ // Si se trata de un nuevo movimiento, lo guarda en la base de datos
-                try
+                if (txtNombreMovimiento.Text == "")
+                    MessageBox.Show("Por favor ingresar el Nombre");
+                else
                 {
-                    movimientoCN.InsertarMovimiento(txtNombreMovimiento.Text, txtDescripcion.Text, txtTipo.Text); //Guarda el contenido existente en las cajas de texto al presionar boton Guardar
-                    MessageBox.Show("Los datos del movimiento han sido ingresados correctamente");
-                    MostrarMovimientos();
-                    limpiarformMovimientos();
+                    if (txtDescripcion.Text == "")
+                        MessageBox.Show("Por favor ingresar la descripción");
+                    else
+                    {
+                        if (Tipo.Text == "")
+                            MessageBox.Show("Por favor ingresar el Nombre");
+                        else
+                        {
+                            try
+                            {
+                                movimientoCN.InsertarMovimiento(txtNombreMovimiento.Text, txtDescripcion.Text, txtTipo.Text); //Guarda el contenido existente en las cajas de texto al presionar boton Guardar
+                                MessageBox.Show("Los datos del movimiento han sido ingresados correctamente");
+                                MostrarMovimientos();
+                                limpiarformMovimientos();
+                            }
+                            catch (Exception)
+                            {
+                                MessageBox.Show("Los datos no se guardaron exitosamente, verifique si los ingresó correctamente"); //Explica el motivo por el cual no se pudo editar 
+                            }
+
+
+                        }
+
+                    }
+
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Los datos no se guardaron exitosamente por el sigiente motivo: " + ex); //Explica el motivo por el cual no se pudo editar 
-                }
+
+
             }
             if(editarMovimiento == true){ // Si se trata de editar un movimiento exitente
-                try
+
+                if (txtNombreMovimiento.Text == "")
+                    MessageBox.Show("Por favor ingresar el Nombre");
+                else
                 {
-                    movimientoCN.editarMovimiento(txtNombreMovimiento.Text, txtDescripcion.Text, txtTipo.Text, MovimientoID);
-                    MessageBox.Show("Los datos del movimiento han sido editados correctamente");
-                    MostrarMovimientos();
-                    limpiarformMovimientos();
-                    editarMovimiento = false; // Reestablece el valor de editarMovimiento para seguir peritiendo el ingreso de valores nuevos
+                    if (txtDescripcion.Text == "")
+                        MessageBox.Show("Por favor ingresar la descripción");
+                    else
+                    {
+                        if (Tipo.Text == "")
+                            MessageBox.Show("Por favor ingresar el Nombre");
+                        else
+                        {
+                            try
+                            {
+                                movimientoCN.editarMovimiento(txtNombreMovimiento.Text, txtDescripcion.Text, txtTipo.Text, MovimientoID);
+                                MessageBox.Show("Los datos del movimiento han sido editados correctamente");
+                                MostrarMovimientos();
+                                limpiarformMovimientos();
+                                editarMovimiento = false; // Reestablece el valor de editarMovimiento para seguir permitiendo el ingreso de valores nuevos
+                            }
+                            catch (Exception)
+                            {
+                                MessageBox.Show("Los datos no se editaron exitosamente, por favor intente de nuevo "); //Explica el motivo por el cual no se pudo guardar
+                            }
+                        }
+
+                    }
+
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("Los datos no se editaron exitosamente, por favor intente de nuevo "); //Explica el motivo por el cual no se pudo guardar
-                }
+
+
+
             }
 
         }
@@ -102,6 +144,11 @@ namespace Atidex
             txtNombreMovimiento.Clear();
             txtDescripcion.Clear();
             txtTipo.Clear();
+        }
+
+        private void dataGridViewMovimientos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

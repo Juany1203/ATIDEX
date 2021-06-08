@@ -76,6 +76,11 @@ namespace CapaDeNegocio
         {
             UsuarioCD.InsertarBitacora(Dia, Mes, Ano, descripcion);
         }
+        public void EliminarBitacora(string IDBitacora) // Manipula datos de eliminar. Recibe ID en forma de string
+        {
+            UsuarioCD.EliminarBitacora(Convert.ToInt32(IDBitacora));
+        }
+
     }
 
 

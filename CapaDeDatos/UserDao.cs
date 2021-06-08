@@ -198,7 +198,16 @@ namespace CapaDeDatos
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
         }
+        public void EliminarBitacora(int ID)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EliminarBitacora";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@IDbitacora", ID);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
 
+        }
 
     }
 

@@ -213,7 +213,7 @@ namespace Atidex
             this.pictureBoxPokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxPokemon.Location = new System.Drawing.Point(454, 158);
             this.pictureBoxPokemon.Name = "pictureBoxPokemon";
-            this.pictureBoxPokemon.Size = new System.Drawing.Size(236, 165);
+            this.pictureBoxPokemon.Size = new System.Drawing.Size(261, 165);
             this.pictureBoxPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxPokemon.TabIndex = 12;
             this.pictureBoxPokemon.TabStop = false;
@@ -221,7 +221,7 @@ namespace Atidex
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(696, 300);
+            this.button4.Location = new System.Drawing.Point(721, 300);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(35, 23);
             this.button4.TabIndex = 13;

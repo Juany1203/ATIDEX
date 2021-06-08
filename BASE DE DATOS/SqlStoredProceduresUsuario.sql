@@ -80,8 +80,6 @@ select *from Bitacora
 where UserIDBitacora = @IDUser
 go
 
-drop proc MostrarBitacora
-exec MostrarBitacora
 
 create proc EditarrBitacora
 @IDBitacora int,
@@ -94,3 +92,9 @@ as
 Update Bitacora set Dia= @Dia,mes= @mes,año= @Año, Descripcion =  @Descripcion, UserIDBitacora = @IDEntrenador
 go
 
+
+create proc EliminarBitacora
+@IDbitacora int
+as
+delete from Bitacora where ID_Bitacora = @IDbitacora
+go

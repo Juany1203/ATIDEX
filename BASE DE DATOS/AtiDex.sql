@@ -130,12 +130,31 @@ values
 ('Fuego'),
 ('Volador'),
 ('Fantasma'),
-('Planta'),
 ('Tierra'),
 ('Hielo'),
-('Normal'),
 ('Veneno'),
 ('Psíquico'),
 ('Roca'),
 ('Acero'),
 ('Agua');
+insert into Movimientos
+values
+('Destructor Pound', 'Ningún efecto', 27),
+('Karate Chop','Alta probabilidad de Golpe Crítico', 26),
+('Double Slap', 'Golpea de 2 a 5 veces seguidas', 30),
+('Comet Punch', 'Golpea de 2 a 5 veces seguidas', 31),
+('Mega Punch','Ningún efecto', 33),
+('Pay Day','Recolecta dinero tras batallas.', 26),
+('Fire Punch', '10% de quemar al rival', 24),
+('Ice Punch', '10% de congelar al rival', 30),
+('Thunder Punch', '10% de paralizar al rival', 32),
+('Scratch', 'Ningún efecto', 27),
+('Vice Grip', 'Ningún efecto', 31),
+('Guillotine','Puede debilitar al Pokémon rival de un solo golpe',32),
+('Razor Wind', 'Debe cargarse el primer turno.', 31),
+('Swords Dance','Aumenta dos niveles el Ataque al usuario', 28),
+('Cut', 'Ningún efecto', 28),
+('Gust','Golpea a Pokémon en mitad de un Vuelo.', 26),
+('Wing Attack', 'Ningún efecto', 27);
+
+select *from Usuario

@@ -41,16 +41,93 @@ namespace Atidex
         private void button1_Click(object sender, EventArgs e)
         {
             InterfazDelEntrenador interfazE = new InterfazDelEntrenador();
-            try
+            if (UserTextBox.Text == "")
+                MessageBox.Show("Por favor ingresar un Username");
+            else
             {
-                    UsuarioCN.InsertarUsuario(UserTextBox.Text, PassTextBox.Text, false, NombreTextBox.Text, Apellido1TextBox.Text, Apellido2TextBox.Text, ProvinciaTextBox.Text, CantonTextBox.Text, DistritoTextBox.Text, DireccionTextBox.Text, TelefonoTextBox.Text, EmailtextBox.Text, SitioWebTextBox.Text, FacebookTextBox.Text, TwiterTextBox.Text, InstagramTextBox.Text);
-                    MessageBox.Show("Se registro Correctamente");
-                    this.Close();
-                   
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No se pudo insertar \n Se presenta el siguiente Error:" + ex);
+                if (PassTextBox.Text == "")
+                    MessageBox.Show("Por favor ingresar una contraseña");
+                else
+                {
+                    if (NombreTextBox.Text == "")
+                        MessageBox.Show("Por favor ingresar un nombre");
+                    else
+                    {
+
+                        if (Apellido1TextBox.Text == "")
+                            MessageBox.Show("Por favor ingresar su apellido 1");
+                        else
+                        {
+                            if (Apellido2TextBox.Text == "")
+                                MessageBox.Show("Por favor ingresar su apellido 2");
+                            else
+                            {
+                                if (ProvinciaTextBox.Text == "")
+                                    MessageBox.Show("Por favor ingresar la provincia");
+                                else
+                                {
+
+                                    if (CantonTextBox.Text == "")
+                                        MessageBox.Show("Por favor ingresar un cantón");
+                                    else
+                                    {
+                                        if (DistritoTextBox.Text == "")
+                                            MessageBox.Show("Por favor ingresar un distrito");
+                                        else
+                                        {
+                                            if (DireccionTextBox.Text == "")
+                                                MessageBox.Show("Por favor ingresar una dirección exacta");
+                                            else
+                                            {
+                                                if (TelefonoTextBox.Text == "")
+                                                    MessageBox.Show("Por favor ingresar un telefono");
+                                                else
+                                                {
+                                                    if (EmailtextBox.Text == "")
+                                                        MessageBox.Show("Por favor ingresar un email");
+                                                    else
+                                                    {
+                                                        try
+                                                        {
+                                                            UsuarioCN.InsertarUsuario(UserTextBox.Text, PassTextBox.Text, false, NombreTextBox.Text, Apellido1TextBox.Text, Apellido2TextBox.Text, ProvinciaTextBox.Text, CantonTextBox.Text, DistritoTextBox.Text, DireccionTextBox.Text, TelefonoTextBox.Text, EmailtextBox.Text, SitioWebTextBox.Text, FacebookTextBox.Text, TwiterTextBox.Text, InstagramTextBox.Text);
+                                                            MessageBox.Show("Se registro Correctamente");
+                                                            this.Close();
+
+                                                        }
+                                                        catch (Exception)
+                                                        {
+                                                            MessageBox.Show("No se pudo registrar, verifique si los datos fueron ingresados correctamente");
+                                                        }
+
+                                                    }
+
+
+                                                }
+
+
+                                            }
+
+
+                                        }
+
+
+                                    }
+
+                                }
+
+
+                            }
+
+
+                        }
+
+
+                    }
+
+
+                }
+
+
             }
         }
     }

@@ -14,6 +14,7 @@ namespace Atidex
     {
         CN_Usuario UsuarioCN = new CN_Usuario();
         private int idUsuario = UserLoginCache.IdUser;
+
         public FormBitacora()
         {
             InitializeComponent();
@@ -79,6 +80,21 @@ namespace Atidex
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                string IDBitacora = "";
+                CN_Usuario UsuarioCN = new CN_Usuario();
+                IDBitacora = dataGridView1.CurrentRow.Cells["ID_Bitacora"].Value.ToString();
+                UsuarioCN.EliminarBitacora(IDBitacora);
+                MessageBox.Show("El dato se eliminó correctamente");
+                MostrarBitacora();
+            }
+            else
+                MessageBox.Show("Seleccione una fila por favor");
         }
     }
 }
